@@ -6,22 +6,19 @@
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-
 	<script src="javascript.js"></script>
 
 	<div class="inhalt">
 
+
 			<div class="ordnereins">
 				<img src="icons/1.png" onclick="einsoeffnen()">
-				
 					<div id="einsoeffnen">
-
-						hier oenffen
-						<div id="foto">
+						<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
+						<div id="foto" onclick="toggle_visibility('fotooeffnen');">
 							<img src="icons/1.png">
 						</div> 
-						<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
-						<div id="text">
+						<div id="text" onclick="toggle_visibility('informationeins');">
 							<img src="icons/1.png">
 						</div> 
 
@@ -48,9 +45,9 @@
 				<div id="googleBrowser">
 				<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser');event.stopPropagation()">x</a>
 					Google Nach Leetspeak
-				<input id="suche" type="text" onkeyup="check_google (this);"></div>
+				<input id="suche" type="text" onkeyup="check_google (this);">
 				<div id="leet">Leetspeek</div>
-				<div id="falsch">Du solltest nach etwas anderem Suchen</div>
+				<div id="falsch">Du solltest nach etwas anderem Suchen</div></div>
 			</div>
 			
 
@@ -74,6 +71,14 @@
 					</div>
 					<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
 			</div>
+
+<div id="fotooeffnen">
+<img id="alphabet" src="icons/alphabet.jpg">
+</div>
+
+<div id="informationeins">
+<img id="alphabet" src="icons/alphabet.jpg">
+</div>
 
 	</div>
 

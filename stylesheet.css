@@ -14,7 +14,6 @@ input {
 	width: 26px;
 }
 
-
 .inhalt {
 	background-color: black;
 	width: 90vw;
@@ -42,6 +41,30 @@ input {
 		height: 30vh;
 	}
 
+	#fotooeffnen {
+		display: none;
+		position: relative;
+		background-color: none;
+		left: 40vw;
+		top: 20vh;
+		width: 20vw;
+		height: 25vh;
+	}
+
+	#alphabet {
+		max-width: auto;
+		height: 30vh;
+		}
+
+	#informationeins {
+		display: none;
+		position: fixed;
+		background-color: none;
+		left: 60vw;
+		top: 20vh;
+		width: 20vw;
+		height: 25vh;
+	}
 
 .ordnerzwei {
 	position: fixed;

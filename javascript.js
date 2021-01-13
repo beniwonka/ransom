@@ -16,7 +16,6 @@ function unknownRedet() {
 }
 
 
-
 function check_password (input_element) {
   
   var password = input_element.value;
