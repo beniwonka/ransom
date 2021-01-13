@@ -1,6 +1,6 @@
 # RANSOM
 
-#### ein kleines rätsel-minigame in dem es darum geht, die lösung auf dem desktop zu finden um den virus zu deaktivieren.
+#### ein minigame in dem es darum geht, durch kleine rätsel auf die lösung zu kommen um den virus zu deaktivieren.
 
 [Aktueller Stand](https://beniwonka.github.io/ransom/)
 
