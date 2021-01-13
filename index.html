@@ -20,7 +20,7 @@
 						<div id="foto">
 							<img src="icons/1.png">
 						</div> 
-
+						<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
 						<div id="text">
 							<img src="icons/1.png">
 						</div> 
@@ -32,16 +32,22 @@
 			<div class="ordnerzwei" onclick="passwordzwei()">
 				<img src="icons/2.png" alt="MDN">
 					<div id="passwordzwei">
+						<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei');event.stopPropagation()">x</a>
 						<br>Gib das Passwort ein<br>
 							<input type="text" onkeyup="check_password (this);">
 							<br>
 					</div>
-					<div id="textdatei" style="display: none;">Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
+					
+					<div id="textdatei" style="display: none;">
+						<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei');event.stopPropagation()">x</a>
+						Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
 			</div>
 
 			<div class="google" onclick="googleOpen()">
 				<img src="icons/4.png" alt="MDN">
-				<div id="googleBrowser" style="display: none;">Google Nach Leetspeak
+				<div id="googleBrowser">
+				<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser');event.stopPropagation()">x</a>
+					Google Nach Leetspeak
 				<input id="suche" type="text" onkeyup="check_google (this);"></div>
 				<div id="leet">Leetspeek</div>
 				<div id="falsch">Du solltest nach etwas anderem Suchen</div>
@@ -51,6 +57,7 @@
 			<div class="chat" onclick="chatboxOpen()">
 				<img src="icons/5.png">
 						<div id='chatbox'>
+						<a href="#" id="chatClose" onclick="toggle_visibility('chatbox');event.stopPropagation()">x</a>
 						    <h1>Chat</h1>
 								<p id="chatLog"></p>
                 				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
@@ -60,6 +67,7 @@
 			<div class="deactivate" onclick="finaleOpen()">
 				<img src="icons/5.png" alt="MDN">
 				<div id="passwordDeaktivieren">
+						<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren');event.stopPropagation()">x</a>
 						<br>Gib das Passwort ein<br>
 							<input type="text" onkeyup="check_deactivate (this);">
 							<br>
