@@ -2,7 +2,7 @@
 
 #### ein kleines rätsel-minigame in dem es darum geht, die lösung auf dem desktop zu finden um den virus zu deaktivieren.
 
-[Aktueller Stand](https://beniwonka.github.io/mensaria-madness/)
+[Aktueller Stand](https://beniwonka.github.io/ransom/)
 
 ## Was noch gemacht werden muss:
                        
