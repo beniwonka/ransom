@@ -1,0 +1,148 @@
+
+
+html {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+}
+
+input {
+	width: 26px;
+}
+
+
+.inhalt {
+	background-color: black;
+	width: 90vw;
+	height: 70vh;
+}
+
+.inhalt img {
+	height: 10vh;
+}
+
+
+.ordnereins {
+	position: fixed;
+  	bottom: 60vh;
+  	right: 45vw;
+}
+
+	#einsoeffnen {
+		display: none;
+		position: fixed;
+		background-color: white;
+		right: 50vw;
+		bottom: 50vh;
+		width: 40vw;
+		height: 30vh;
+	}
+
+
+.ordnerzwei {
+	position: fixed;
+  	bottom: 60vh;
+  	right: 20vw;
+}
+
+	#passwordzwei {
+		display: none;
+		position: fixed;
+		background-color: white;
+		right: 40vw;
+		bottom: 52vh;
+		width: 250px;
+		height: 80px;
+	}
+
+		#textdatei {
+		position: fixed;
+		background-color: white;
+		right: 30vw;
+		bottom: 45vh;
+		width: 40vw;
+		height: 20vh;
+	}
+
+
+.google {
+	position: fixed;
+  	bottom: 40vh;
+  	right: 15vw;
+}
+
+	#googleBrowser {
+		display: none;
+		position: fixed;
+		background-color: white;
+		right: 50vw;
+		bottom: 50vh;
+		width: 40vw;
+		height: 30vh;
+	}
+
+		#leet {
+		display: none;
+		position: fixed;
+		background-color: none;
+		right: 50vw;
+		bottom: 30vh;
+		width: 40vw;
+		height: 30vh;
+	}
+
+		#falsch {
+		display: none;
+		position: fixed;
+		background-color: none;
+		right: 50vw;
+		bottom: 30vh;
+		width: 40vw;
+		height: 30vh;
+	}
+
+.chat {
+	position: fixed;
+  	bottom: 20vh;
+  	right: 15vw;
+}
+
+	#chatbox {
+		display: none;
+		position: fixed;
+		background-color: white;
+		width: 20vw;
+		height: 40vh;
+		bottom: 30vh;
+  		right: 40vw;
+	}
+
+.deactivate {
+	position: fixed;
+  	bottom: 20vh;
+  	right: 75vw;
+}
+
+	#passwordDeaktivieren {
+		display: none;
+		position: fixed;
+		background-color: white;
+		right: 40vw;
+		bottom: 52vh;
+		width: 250px;
+		height: 80px;
+	}
+
+	#finale {
+		position: fixed;
+		background-color: white;
+		right: 30vw;
+		bottom: 45vh;
+		width: 40vw;
+		height: 20vh;
+	}
+

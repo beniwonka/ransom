@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>RANSOM</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+	<script src="javascript.js"></script>
+
+	<div class="inhalt">
+
+			<div class="ordnereins">
+				<img src="icons/1.png" onclick="einsoeffnen()">
+				
+					<div id="einsoeffnen">
+
+						hier oenffen
+						<div id="foto">
+							<img src="icons/1.png">
+						</div> 
+
+						<div id="text">
+							<img src="icons/1.png">
+						</div> 
+
+					</div>
+
+			</div>
+
+			<div class="ordnerzwei" onclick="passwordzwei()">
+				<img src="icons/2.png" alt="MDN">
+					<div id="passwordzwei">
+						<br>Gib das Passwort ein<br>
+							<input type="text" onkeyup="check_password (this);">
+							<br>
+					</div>
+					<div id="textdatei" style="display: none;">Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
+			</div>
+
+			<div class="google" onclick="googleOpen()">
+				<img src="icons/4.png" alt="MDN">
+				<div id="googleBrowser" style="display: none;">Google Nach Leetspeak
+				<input id="suche" type="text" onkeyup="check_google (this);"></div>
+				<div id="leet">Leetspeek</div>
+				<div id="falsch">Du solltest nach etwas anderem Suchen</div>
+			</div>
+			
+
+			<div class="chat" onclick="chatboxOpen()">
+				<img src="icons/5.png">
+						<div id='chatbox'>
+						    <h1>Chat</h1>
+								<p id="chatLog"></p>
+                				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
+						</div>
+			</div>
+
+			<div class="deactivate" onclick="finaleOpen()">
+				<img src="icons/5.png" alt="MDN">
+				<div id="passwordDeaktivieren">
+						<br>Gib das Passwort ein<br>
+							<input type="text" onkeyup="check_deactivate (this);">
+							<br>
+					</div>
+					<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
+			</div>
+
+	</div>
+
+</body>
+</html>
