@@ -6,7 +6,7 @@
 
 ## Was noch gemacht werden muss:
 
-  ~~* Button um geöffnete Fenster zu schließen~~
+  *~~Button um geöffnete Fenster zu schließen~~
                        
   * Icons/Desktop designen
                            
