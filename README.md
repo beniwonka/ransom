@@ -5,8 +5,6 @@
 [Aktueller Stand](https://beniwonka.github.io/ransom/)
 
 ## Was noch gemacht werden muss:
-
-  * Button um geöffnete Fenster zu schließen
                        
   * Icons/Desktop designen
                            
