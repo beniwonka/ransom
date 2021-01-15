@@ -19,10 +19,52 @@ input {
 	width: 26px;
 }
 
-a {
-	text-decoration: inherit;
-	color: black;
+
+
+
+
+#browserHeader {
+	border-bottom: 1px solid black;
+	background: url("icons/browser_back.png") 0 50% repeat-x;
+	height: 2vw;
+	position: relative;
 }
+
+					a {
+						font-size: 1em;
+						text-decoration: inherit;
+						color: black;
+						padding: 0.1em 0.5em 0.1em 0.5em;
+						background-color: white;
+						position: absolute;
+					  	top: 50%;
+					  	-ms-transform: translateY(-50%);
+					  	transform: translateY(-50%);
+					}
+
+					span {
+						color: black;
+						font-size: 1em;
+						padding: 0.1em 1em 0.1em 1em;
+						background-color: white;
+						position: absolute;
+					  	top: 50%;
+					  	left: 45%;
+					  	-ms-transform: translateY(-50%);
+					  	transform: translateY(-50%);
+					}
+
+					#block {
+						position: absolute;
+						top: 50%;
+						right: 0%;
+						padding: 1em 0.2em 0.025em 1em;
+						background-color: white;
+						-ms-transform: translateY(-50%);
+					  	transform: translateY(-50%);
+					}
+
+
 
 .inhalt {
 	border-radius: 25px;
@@ -53,6 +95,36 @@ a {
 						width: 40vw;
 						height: 30vh;
 					}
+
+						#browserleftcorner {
+							position: sticky;
+						    top: 0px;
+						    left: 0px;
+							max-width: 10%;
+							height: auto;
+						}
+
+						#browserrightcorner {
+							position: sticky;
+						    top: 0px;
+						    right: 0px;
+							max-width: 10%;
+							height: auto;
+						}
+
+						#browsercenter {
+							position: sticky;
+						    top: 0px;
+						    left: 20%;
+							max-width: 55.5%;
+							height: auto;
+							text-align: center;
+						}
+
+						#einsClose {
+							position: absolute;
+							left: 0px;
+						}
 
 					#fotooeffnen {
 						display: none;

@@ -1,5 +1,3 @@
-
-
 let antwort = {  
   "21" : "Schön dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Lösung.<br> Kennst du mich, so freut es dich. <br> Kennst du mich nicht, so suche mich: <br> Du findest mich ganz sicherlich. <br> Ich bin des Rätsels Lösung",
 }

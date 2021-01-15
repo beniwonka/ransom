@@ -15,7 +15,11 @@
 				<img src="icons/ordner.png" onclick="einsoeffnen()">
 				<br>Aufgabe 1
 					<div id="einsoeffnen">
-						<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
+						<div id="browserHeader">
+							<span id="title">Text</span>
+							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
 						<div id="foto" onclick="toggle_visibility('fotooeffnen');">
 							<img src="icons/1.png">
 						</div> 
