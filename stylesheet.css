@@ -19,9 +19,31 @@ input {
 	width: 26px;
 }
 
+.inhalt {
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 1vw;
+	border-top-left-radius: 1vw;
+	width: 90vw;
+	height: 70vh;
+	background-image: url("icons/background.png");
+  	background-repeat: repeat;
+}
 
+.inhalt img {
+	max-height: 100%;
+	max-width: 6vw;
+}
 
-
+#navileiste {
+	border-top-right-radius: 1vw;
+	border-top-left-radius: 1vw;
+	border-bottom: 1px solid black;
+	background: white;
+	height: 2vw;
+	top: 0px;
+	width: 100%;
+}
 
 #browserHeader {
 	border-bottom: 1px solid black;
@@ -49,7 +71,7 @@ input {
 						background-color: white;
 						position: absolute;
 					  	top: 50%;
-					  	left: 45%;
+					  	left: 39%;
 					  	-ms-transform: translateY(-50%);
 					  	transform: translateY(-50%);
 					}
@@ -65,20 +87,6 @@ input {
 					}
 
 
-
-.inhalt {
-	border-radius: 25px;
-	width: 90vw;
-	height: 70vh;
-	background-image: url("icons/background.png");
-  	background-repeat: repeat;
-}
-
-.inhalt img {
-	max-height: 100%;
-	max-width: 6vw;
-}
-
 .ordnereins {
 	color: white;
 	position: fixed;
@@ -87,6 +95,8 @@ input {
 }
 
 					#einsoeffnen {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
 						position: fixed;
 						background-color: white;
@@ -121,7 +131,7 @@ input {
 							text-align: center;
 						}
 
-						#einsClose {
+						#einsClose, #zweiClose, #zweipunkteinsClose {
 							position: absolute;
 							left: 0px;
 						}
@@ -158,6 +168,8 @@ input {
 }
 
 					#passwordzwei {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none; 
 						position: fixed;
 						width: 30vw;
@@ -187,6 +199,8 @@ input {
 					}
 
 						#textdatei {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						position: fixed;
 						background-color: white;
 						right: 30vw;
@@ -194,6 +208,10 @@ input {
 						width: 40vw;
 						height: 20vh;
 					}
+
+					#textHinweis {
+						padding: 2vw 2vw 2vw 2vw;
+						}
 
 
 .google {

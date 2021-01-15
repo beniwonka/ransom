@@ -10,13 +10,14 @@
 
 	<div class="inhalt">
 
+	<div id="navileiste"></div>
 
 			<div class="ordnereins">
 				<img src="icons/ordner.png" onclick="einsoeffnen()">
 				<br>Aufgabe 1
 					<div id="einsoeffnen">
 						<div id="browserHeader">
-							<span id="title">Text</span>
+							<span id="title">Aufgabe I</span>
 							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div>
@@ -32,10 +33,15 @@
 			</div>
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img src="icons/2.png" alt="MDN">	
+				<img src="icons/2.png" alt="MDN">
+					<br>Aufgabe-2.zip	
 					<div id="passwordzwei">
+						<div id="browserHeader">
+							<span id="title">Unarchiver</span>
+							<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
 						
-						<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei');event.stopPropagation()">x</a>
 						<br>Gib das Passwort ein<br>
 
 								<input id="partitioned" type="password" maxlength="4" onkeyup="check_password (this);" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  onKeyPress="if(this.value.length==4) return false;"/>
@@ -45,8 +51,14 @@
 						
 					
 					<div id="textdatei" style="display: none;">
-						<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei');event.stopPropagation()">x</a>
+						<div id="browserHeader">
+							<span id="title">Hinweis</span>
+							<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div><br>
+						<div id="textHinweis">
 						Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
+					</div>
 			</div>
 
 			<div class="google" onclick="googleOpen()">

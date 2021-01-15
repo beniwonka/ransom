@@ -20,7 +20,7 @@ function check_password (input_element) {
   
   if (password == '3301')
       	document.getElementById ('textdatei').style.display = 'block',
-  		  document.getElementById ('zweiBackgr').style.display = 'none';
+  		  document.getElementById ('passwordzwei').style.display = 'none';
   else {
       	document.getElementById ('textdatei').style.display = 'none';
 }
