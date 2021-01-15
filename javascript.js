@@ -11,7 +11,7 @@ function unknownRedet() {
   if (eingabe in antwort) {
   document.getElementById("chatLog").innerHTML += "Unknown: " + antwort[eingabe] + "<br>";
     } else {
-    document.getElementById("chatLog").innerHTML += "Unknown: Ich warte auf die Lösung." + "<br>";
+    document.getElementById("chatLog").innerHTML += "Unknown: Ich warte auf die Loesung." + "<br>";
     }
 }
 
