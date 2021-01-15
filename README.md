@@ -6,7 +6,7 @@
 
 ## Was noch gemacht werden muss:
 
-  * Button um geöffnete Fenster zu schließen
+  * Pin-Code Input um Ordner freizuschalten
                        
   * Icons/Desktop designen
                            
