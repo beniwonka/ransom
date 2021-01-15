@@ -1,6 +1,7 @@
 
 
 html {
+	background-color: black;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
@@ -15,15 +16,16 @@ input {
 }
 
 .inhalt {
-	background-color: black;
+	border-radius: 25px;
 	width: 90vw;
 	height: 70vh;
+	background-image: url("icons/background.png");
+  	background-repeat: repeat;
 }
 
 .inhalt img {
 	height: 10vh;
 }
-
 
 .ordnereins {
 	position: fixed;
@@ -31,65 +33,84 @@ input {
   	right: 45vw;
 }
 
-	#einsoeffnen {
-		display: none;
-		position: fixed;
-		background-color: white;
-		right: 50vw;
-		bottom: 50vh;
-		width: 40vw;
-		height: 30vh;
-	}
+					#einsoeffnen {
+						display: none;
+						position: fixed;
+						background-color: white;
+						right: 50vw;
+						bottom: 50vh;
+						width: 40vw;
+						height: 30vh;
+					}
 
-	#fotooeffnen {
-		display: none;
-		position: relative;
-		background-color: none;
-		left: 40vw;
-		top: 20vh;
-		width: 20vw;
-		height: 25vh;
-	}
+					#fotooeffnen {
+						display: none;
+						position: relative;
+						background-color: none;
+						left: 40vw;
+						top: 20vh;
+						width: 20vw;
+						height: 25vh;
+					}
 
-	#alphabet {
-		max-width: auto;
-		height: 30vh;
-		}
+					#alphabet {
+						max-width: auto;
+						height: 30vh;
+						}
 
-	#informationeins {
-		display: none;
-		position: fixed;
-		background-color: none;
-		left: 60vw;
-		top: 20vh;
-		width: 20vw;
-		height: 25vh;
-	}
+					#informationeins {
+						display: none;
+						position: fixed;
+						background-color: none;
+						left: 60vw;
+						top: 20vh;
+						width: 20vw;
+						height: 25vh;
+					}
 
 .ordnerzwei {
 	position: fixed;
-  	bottom: 60vh;
-  	right: 20vw;
+	bottom: 60vh;
+	right: 20vw;
 }
 
-	#passwordzwei {
-		display: none;
-		position: fixed;
-		background-color: white;
-		right: 40vw;
-		bottom: 52vh;
-		width: 250px;
-		height: 80px;
-	}
+					#passwordzwei {
+						display: none; 
+						position: fixed;
+						width: 30vw;
+						height: 15vh;
+						right: 40vw;
+						bottom: 52vh;
+						overflow: hidden;
+						background-color: white;
+						
+					}
 
-		#textdatei {
-		position: fixed;
-		background-color: white;
-		right: 30vw;
-		bottom: 45vh;
-		width: 40vw;
-		height: 20vh;
-	}
+					#partitioned {
+						width: 18vw;
+						max-width: 100%;
+						border: 0;
+						outline: none;
+				  		position: sticky;
+				  		padding-left: 2.5vw;
+				  		font-size: 2vw;
+						letter-spacing: 2.05em;
+						background-image: linear-gradient(to left, black 50%, rgba(255, 255, 255, 0) 0%);
+						background-position: bottom;
+						background-size: 5vw 1px;
+						background-repeat: repeat-x;
+						background-position-x: 4vw;
+
+					}
+
+						#textdatei {
+						position: fixed;
+						background-color: white;
+						right: 30vw;
+						bottom: 45vh;
+						width: 40vw;
+						height: 20vh;
+					}
 
 
 .google {
@@ -98,35 +119,35 @@ input {
   	right: 15vw;
 }
 
-	#googleBrowser {
-		display: none;
-		position: fixed;
-		background-color: white;
-		right: 50vw;
-		bottom: 50vh;
-		width: 40vw;
-		height: 30vh;
-	}
+					#googleBrowser {
+						display: none;
+						position: fixed;
+						background-color: white;
+						right: 50vw;
+						bottom: 50vh;
+						width: 40vw;
+						height: 30vh;
+					}
 
-		#leet {
-		display: none;
-		position: fixed;
-		background-color: none;
-		right: 50vw;
-		bottom: 30vh;
-		width: 40vw;
-		height: 30vh;
-	}
+						#leet {
+						display: none;
+						position: fixed;
+						background-color: none;
+						right: 50vw;
+						bottom: 30vh;
+						width: 40vw;
+						height: 30vh;
+					}
 
-		#falsch {
-		display: none;
-		position: fixed;
-		background-color: none;
-		right: 50vw;
-		bottom: 30vh;
-		width: 40vw;
-		height: 30vh;
-	}
+						#falsch {
+						display: none;
+						position: fixed;
+						background-color: none;
+						right: 50vw;
+						bottom: 30vh;
+						width: 40vw;
+						height: 30vh;
+					}
 
 .chat {
 	position: fixed;
@@ -134,15 +155,15 @@ input {
   	right: 15vw;
 }
 
-	#chatbox {
-		display: none;
-		position: fixed;
-		background-color: white;
-		width: 20vw;
-		height: 40vh;
-		bottom: 30vh;
-  		right: 40vw;
-	}
+					#chatbox {
+						display: none;
+						position: fixed;
+						background-color: white;
+						width: 20vw;
+						height: 40vh;
+						bottom: 30vh;
+				  		right: 40vw;
+					}
 
 .deactivate {
 	position: fixed;
@@ -150,23 +171,23 @@ input {
   	right: 75vw;
 }
 
-	#passwordDeaktivieren {
-		display: none;
-		position: fixed;
-		background-color: white;
-		right: 40vw;
-		bottom: 52vh;
-		width: 250px;
-		height: 80px;
-	}
+					#passwordDeaktivieren {
+						display: none;
+						position: fixed;
+						background-color: white;
+						right: 40vw;
+						bottom: 52vh;
+						width: 250px;
+						height: 80px;
+					}
 
-	#finale {
-		position: fixed;
-		background-color: white;
-		right: 30vw;
-		bottom: 45vh;
-		width: 40vw;
-		height: 20vh;
-	}
+					#finale {
+						position: fixed;
+						background-color: white;
+						right: 30vw;
+						bottom: 45vh;
+						width: 40vw;
+						height: 20vh;
+					}
 
 

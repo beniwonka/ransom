@@ -27,13 +27,17 @@
 			</div>
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img src="icons/2.png" alt="MDN">
+				<img src="icons/2.png" alt="MDN">	
 					<div id="passwordzwei">
+						
 						<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei');event.stopPropagation()">x</a>
 						<br>Gib das Passwort ein<br>
-							<input type="text" onkeyup="check_password (this);">
-							<br>
+
+								<input id="partitioned" type="password" maxlength="4" onkeyup="check_password (this);" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  onKeyPress="if(this.value.length==4) return false;"/>
+
+						<br>
 					</div>
+						
 					
 					<div id="textdatei" style="display: none;">
 						<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei');event.stopPropagation()">x</a>
