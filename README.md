@@ -5,8 +5,6 @@
 [Aktueller Stand](https://beniwonka.github.io/ransom/)
 
 ## Was noch gemacht werden muss:
-
-  * Pin-Code Input um Ordner freizuschalten
                        
   * Icons/Desktop designen
                            
