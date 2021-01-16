@@ -37,7 +37,7 @@
 
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img id="zip" src="icons/zip_clicked.png">
+				<img id="zip" src="icons/zip.png">
 					<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>	
 					<div id="passwordzwei">
@@ -66,39 +66,61 @@
 					</div>
 
 			<div class="google" onclick="googleOpen()">
-				<img src="icons/google_clicked.png">
+				<img id="google" src="icons/google.png">
 				<br> <span id="ordnerName">Google</span>
+			</div>
 				<div id="googleBrowser">
-				<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser');event.stopPropagation()">x</a>
-					Google Nach Leetspeak
+					<div id="browserHeader">
+							<span id="title">Google</span>
+							<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
+				
 				<input id="suche" type="text" onkeyup="check_google (this);">
 				<div id="leet">Leetspeek</div>
-				<div id="falsch">Du solltest nach etwas anderem Suchen</div></div>
+				<div id="falsch">Du solltest nach etwas anderem Suchen</div>
 			</div>
+			
 			
 
 			<div class="chat" onclick="chatboxOpen()">
-				<img src="icons/chat.png">
+				<img id="chat" src="icons/chat.png">
 				<br> <span id="ordnerName">Chat.app</span>
-						<div id='chatbox'>
-						<a href="#" id="chatClose" onclick="toggle_visibility('chatbox');event.stopPropagation()">x</a>
-						    <h1>Chat</h1>
-								<p id="chatLog"></p>
-                				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
-						</div>
 			</div>
+						<div id='chatbox'>
+
+							<div id="browserHeader">
+								<span id="title">Chat</span>
+								<a href="#" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+								<div id="chatInhalt">
+								<p>Unknown: Wie lautet deine Antwort? </p>
+								<p id="chatLog"></p>
+                				</div>
+                				<div id="usertext">
+                					<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
+								</div>
+								</div>
+						</div>
+			
 
 			<div class="deactivate" onclick="finaleOpen()">
-				<img src="icons/deactivate.png">
+				<img id="deactivate" src="icons/deactivate.png">
 				<br> <span id="ordnerName">Antivirus.app</span>
+			</div>
 				<div id="passwordDeaktivieren">
-						<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren');event.stopPropagation()">x</a>
+					<div id="browserHeader">
+							<span id="title">Google</span>
+							<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
 						<br>Gib das Passwort ein<br>
 							<input type="text" onkeyup="check_deactivate (this);">
 							<br>
 					</div>
 					<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
-			</div>
+			
 
 <div id="fotooeffnen">
 <img id="alphabet" src="icons/alphabet.jpg">

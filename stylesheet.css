@@ -10,7 +10,7 @@ html {
 	width: 100vw;
 	height: 100vh;
 	flex-direction: column;
-  	justify-content: center;
+	justify-content: center;
   	align-items: center;
   	text-align: center;
 }
@@ -214,6 +214,8 @@ input {
 						bottom: 52vh;
 						overflow: hidden;
 						background-color: white;
+
+
 						
 					}
 
@@ -257,6 +259,8 @@ input {
 }
 
 					#googleBrowser {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
 						position: fixed;
 						background-color: white;
@@ -264,6 +268,10 @@ input {
 						bottom: 50vh;
 						width: 40vw;
 						height: 30vh;
+					}
+
+					#googleBrowser a {
+						left: 0;
 					}
 
 						#leet {
@@ -292,7 +300,13 @@ input {
   	right: 15vw;
 }
 
+					#chatbox a {
+						left: 0;
+					}
+
 					#chatbox {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
 						position: fixed;
 						background-color: white;
@@ -300,6 +314,30 @@ input {
 						height: 40vh;
 						bottom: 30vh;
 				  		right: 40vw;
+				  		text-align: left;
+				  		overflow:scroll;
+					}
+
+
+
+					#userBox {
+						position: fixed;
+						bottom: 30%;
+						width: 20vw;
+						height: 3vh;
+						font-family: ChiKareGo;
+						color: white;
+						font-size: 1em;
+						justify-content: center;
+						background-color: black;
+						outline: none;
+						border: 0;
+					}
+
+
+					#chatInhalt {
+						padding-left: 1vw ;
+				  		text-overflow: ellipsis;
 					}
 
 .deactivate {
@@ -307,8 +345,13 @@ input {
   	bottom: 20vh;
   	right: 75vw;
 }
+					#passwordDeaktivieren a {
+						left: 0;
+					}
 
 					#passwordDeaktivieren {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
 						position: fixed;
 						background-color: white;

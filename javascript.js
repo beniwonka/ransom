@@ -2,8 +2,9 @@ function googleOpen() {
   var a = document.getElementById("googleBrowser");
     if (a.style.display === "none") {
       a.style.display = "block";
+      document.getElementById("google").src="icons/google_clicked.png";
         } else {
-      a.style.display = "block";
+      a.style.display = "none";
       }
     }
 
@@ -33,8 +34,9 @@ function chatboxOpen() {
   var z = document.getElementById("chatbox");
     if (z.style.display === "none") {
       z.style.display = "block";
+      document.getElementById("chat").src="icons/chat_clicked.png";
         } else {
-      z.style.display = "block";
+      z.style.display = "none";
       }
     }
 
@@ -42,8 +44,9 @@ function finaleOpen() {
   var b = document.getElementById("passwordDeaktivieren");
   if (b.style.display === "none") {
     b.style.display = "block";
+    document.getElementById("deactivate").src="icons/deactivate_clicked.png";
   } else {
-    b.style.display = "block";
+    b.style.display = "none";
   }
 }
 
@@ -61,17 +64,17 @@ function toggle_visibility(id, icon) {
 
 
 let antwort = {  
-  "21" : "Schön dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Lösung.<br> Kennst du mich, so freut es dich. <br> Kennst du mich nicht, so suche mich: <br> Du findest mich ganz sicherlich. <br> Ich bin des Rätsels Lösung",
+  "21" : "Schoen dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Loesung. Kennst du mich, so freut es dich. Kennst du mich nicht, so suche mich: Du findest mich ganz sicherlich. Ich bin des Raetsels Loesung",
 }
 
 function unknownRedet() {
   let eingabe = document.getElementById("userBox").value;
   document.getElementById("userBox").value = "";
-  document.getElementById("chatLog").innerHTML += "Du: " + eingabe + "<br>";
+  document.getElementById("chatLog").innerHTML += "Du: " + eingabe + "<br><br>";
   if (eingabe in antwort) {
-  document.getElementById("chatLog").innerHTML += "Unknown: " + antwort[eingabe] + "<br>";
+  document.getElementById("chatLog").innerHTML += "Unknown: " + antwort[eingabe] + "<br><br>";
     } else {
-    document.getElementById("chatLog").innerHTML += "Unknown: Ich warte auf die Loesung." + "<br>";
+    document.getElementById("chatLog").innerHTML += "Unknown: Ich warte auf die Loesung." + "<br><br>";
     }
 }
 
