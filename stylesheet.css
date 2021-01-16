@@ -15,12 +15,12 @@ html {
   	text-align: center;
 }
 
-input {
-	width: 26px;
-}
 
 .inhalt {
-	overflow:auto;
+
+    content: " ";
+	animation: flicker .005s infinite;
+	overflow: auto;
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
 	border-top-right-radius: 1vw;
@@ -29,6 +29,7 @@ input {
 	height: 70vh;
 	background-image: url("icons/background.png");
   	background-repeat: repeat;
+
 }
 
 .inhalt img {
@@ -371,3 +372,106 @@ input {
 					}
 
 
+@keyframes flicker {
+    0% {
+        opacity:.92
+    }
+
+    5% {
+        opacity:.92
+    }
+
+    10% {
+        opacity:.94
+    }
+
+    15% {
+        opacity:.90
+    }
+
+    20% {
+        opacity:.80
+    }
+
+    25% {
+        opacity:.98
+    }
+
+    30% {
+        opacity:.93
+    }
+
+    35% {
+        opacity:.92
+
+    }
+
+    40% {
+        opacity:.90
+    }
+
+    45% {
+        opacity:.94
+    }
+
+    50% {
+        opacity:.92
+    }
+
+    55% {
+        opacity:.91
+    }
+
+    60% {
+        opacity:.92
+    }
+
+    65% {
+        opacity:.93
+    }
+
+    70% {
+        opacity:.99
+    }
+
+    75% {
+        opacity:.98
+    }
+
+    80% {
+        opacity:.91
+    }
+
+    85% {
+        opacity:.91
+    }
+
+    90% {
+        opacity:.97
+    }
+
+    95% {
+        opacity:.99
+    }
+
+    100% {
+        opacity:.99
+    }
+}
+
+
+.inhalt::after {
+	animation: flicker .15s infinite;
+    content: " ";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, .08);
+    opacity: 0;
+    z-index: 10;
+    pointer-events:none
+}
+}
