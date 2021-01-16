@@ -13,5 +13,7 @@
   * Countdown (nach Ablauf wird Spiel gestoppt)
 
   * Final-Screen, wenn Rätsel gelöst wurde
+
+  * SOUNDS, SOUNDS, SOUNDS!
   
   * Nice to have: Fenster verschieben können
