@@ -162,12 +162,14 @@ input {
 					}
 
 .ordnerzwei {
+	color: white;
 	position: fixed;
 	bottom: 60vh;
 	right: 20vw;
 }
 
 					#passwordzwei {
+						color: black;
 						border-radius: 5px;
 						box-shadow: 1px 1px 1px black;
 						display: none; 

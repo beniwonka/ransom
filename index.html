@@ -13,12 +13,12 @@
 	<div id="navileiste"></div>
 
 			<div class="ordnereins">
-				<img src="icons/ordner.png" onclick="einsoeffnen()">
-				<br>Aufgabe 1
+				<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
+				<br>aufgabe I
 					<div id="einsoeffnen">
 						<div id="browserHeader">
-							<span id="title">Aufgabe I</span>
-							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen');event.stopPropagation()">x</a>
+							<span id="title">aufgabe I</span>
+							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div>
 						<div id="foto" onclick="toggle_visibility('fotooeffnen');">
@@ -33,12 +33,12 @@
 			</div>
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img src="icons/2.png" alt="MDN">
-					<br>Aufgabe-2.zip	
+				<img id="zip" src="icons/zip.png">
+					<br>hinweis.zip	
 					<div id="passwordzwei">
 						<div id="browserHeader">
 							<span id="title">Unarchiver</span>
-							<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei');event.stopPropagation()">x</a>
+							<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div>
 						
