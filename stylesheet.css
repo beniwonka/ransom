@@ -142,12 +142,26 @@ html {
 						height: 30vh;
 					}
 
-						#einsClose, #zweiClose, #zweipunkteinsClose {
-							position: absolute;
-							left: 0px;
+					#foto {
+						position: absolute;
+						left: 5%;
+						bottom: 5%;
+					}
+
+					#readMe {
+						position: absolute;
+						right: 40%;
+						top: 20%;
+					}
+
+					#einsClose, #zweiClose, #zweipunkteinsClose {
+						position: absolute;
+						left: 0px;
 						}
 
 					#fotooeffnen {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
 						position: absolute;
 						background-color: white;
@@ -167,25 +181,28 @@ html {
 						}
 
 					#informationeins {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						display: none;
-						position: fixed;
-						background-color: none;
-						left: 60vw;
-						top: 20vh;
-						width: 20vw;
+						position: absolute;
+						background-color: white;
+						left: 7vw;
+						bottom: 25vh;
+						width: 30vw;
 						height: 25vh;
 					}
 
-					#foto {
-						position: absolute;
-						left: 5%;
-						bottom: 5%;
+					#informationeins a {
+						left: 0;
 					}
 
-					#readMe {
-						position: absolute;
-						right: 40%;
-						top: 20%;
+					#informationeins span {
+						left: 30%;
+					}
+
+					#readMePhoto {
+						max-width: 15vw;
+						height: auto;
 					}
 
 .ordnerzwei {
@@ -197,6 +214,7 @@ html {
 					#passwordzwei {
 						color: black;
 						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
 						box-shadow: 1px 1px 1px black;
 						display: none; 
 						position: fixed;
@@ -239,9 +257,9 @@ html {
 						height: 20vh;
 					}
 
-					#textHinweis {
+						#textHinweis {
 						padding: 2vw 2vw 2vw 2vw;
-						}
+					}
 
 
 .google {
@@ -284,6 +302,12 @@ html {
 						bottom: 30vh;
 						width: 40vw;
 						height: 30vh;
+					}
+
+					#suche {
+						outline: none;
+						font-family: ChiKareGo;
+						font-size: 0.9em;
 					}
 
 .chat {
@@ -329,6 +353,7 @@ html {
 
 					#chatInhalt {
 						padding-left: 1vw ;
+						padding-right: 1vw;
 				  		text-overflow: ellipsis;
 					}
 

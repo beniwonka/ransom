@@ -56,7 +56,17 @@ function fotoOpen() {
     c.style.display = "block";
     document.getElementById("photo").src="icons/photo_clicked.png";
   } else {
+    c.style.display = "none";
+  }
+}
+
+function infoOpen() {
+  var c = document.getElementById("informationeins");
+  if (c.style.display === "none") {
     c.style.display = "block";
+    document.getElementById("doc").src="icons/doc_clicked.png";
+  } else {
+    c.style.display = "none";
   }
 }
 

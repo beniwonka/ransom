@@ -31,15 +31,15 @@
 							<span id="ordnerName">Alphabet.jpeg</span>
 						</div> 
 						<div id="readMe">
-							<img src="icons/doc.png" onclick="toggle_visibility('informationeins', 'doc');"><br>
-							<span id="ordnerName">ReadMe.txt</span>
+							<img id="doc" src="icons/doc.png" onclick="infoOpen();"><br>
+							<span id="ordnerName">TryToReadMe.txt</span>
 						</div> 
 
 					</div>
 
 
-			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img id="zip" src="icons/zip.png">
+			<div class="ordnerzwei">
+				<img id="zip" src="icons/zip.png" onclick="passwordzwei();">
 					<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>	
 					<div id="passwordzwei">
@@ -67,8 +67,8 @@
 						Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
 					</div>
 
-			<div class="google" onclick="googleOpen()">
-				<img id="google" src="icons/google.png">
+			<div class="google">
+				<img id="google" src="icons/google.png"  onclick="googleOpen()">
 				<br> <span id="ordnerName">Google</span>
 			</div>
 				<div id="googleBrowser">
@@ -85,8 +85,8 @@
 			
 			
 
-			<div class="chat" onclick="chatboxOpen()">
-				<img id="chat" src="icons/chat.png">
+			<div class="chat">
+				<img id="chat" src="icons/chat.png" onclick="chatboxOpen();">
 				<br> <span id="ordnerName">Chat.app</span>
 			</div>
 						<div id='chatbox'>
@@ -107,8 +107,8 @@
 						
 			
 
-			<div class="deactivate" onclick="finaleOpen()">
-				<img id="deactivate" src="icons/deactivate.png">
+			<div class="deactivate">
+				<img id="deactivate" src="icons/deactivate.png" onclick="finaleOpen()">
 				<br> <span id="ordnerName">Antivirus.app</span>
 			</div>
 				<div id="passwordDeaktivieren">
@@ -134,7 +134,14 @@
 </div>
 
 <div id="informationeins">
-<img id="alphabet" src="icons/alphabet.jpg">
+	<div id="browserHeader">
+							<span id="title">TryToReadMe.txt</span>
+							<a href="#" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
+						<br>
+						<br>
+<img id="readMePhoto" src="icons/word.png">
 </div>
 
 	</div>
