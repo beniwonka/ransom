@@ -5,8 +5,6 @@
 [Aktueller Stand](https://beniwonka.github.io/ransom/)
 
 ## Was noch gemacht werden muss:
-                           
-  * Allgemeine CSS-Gestaltung
   
   * Boot-Up und Start Screen
 
@@ -16,4 +14,4 @@
 
   * SOUNDS, SOUNDS, SOUNDS!
   
-  * Nice to have: Fenster verschieben können
+  * Nice to have: Finder-Fenster verschieben
