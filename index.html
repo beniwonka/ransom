@@ -18,7 +18,7 @@
 
 			<div class="ordnereins">
 				<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
-				<br>aufgabe I
+				<br><span id="ordnerName">Start</span>
 				</div>
 					<div id="einsoeffnen">
 						<div id="browserHeader">
@@ -37,8 +37,8 @@
 
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
-				<img id="zip" src="icons/zip.png">
-					<br>|)|23!|)|23!|\\||_|113!|\\|5.zip
+				<img id="zip" src="icons/zip_clicked.png">
+					<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>	
 					<div id="passwordzwei">
 						<div id="browserHeader">
@@ -66,7 +66,8 @@
 					</div>
 
 			<div class="google" onclick="googleOpen()">
-				<img src="icons/4.png" alt="MDN">
+				<img src="icons/google_clicked.png">
+				<br> <span id="ordnerName">Google</span>
 				<div id="googleBrowser">
 				<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser');event.stopPropagation()">x</a>
 					Google Nach Leetspeak
@@ -77,7 +78,8 @@
 			
 
 			<div class="chat" onclick="chatboxOpen()">
-				<img src="icons/5.png">
+				<img src="icons/chat.png">
+				<br> <span id="ordnerName">Chat.app</span>
 						<div id='chatbox'>
 						<a href="#" id="chatClose" onclick="toggle_visibility('chatbox');event.stopPropagation()">x</a>
 						    <h1>Chat</h1>
@@ -87,7 +89,8 @@
 			</div>
 
 			<div class="deactivate" onclick="finaleOpen()">
-				<img src="icons/5.png" alt="MDN">
+				<img src="icons/deactivate.png">
+				<br> <span id="ordnerName">Antivirus.app</span>
 				<div id="passwordDeaktivieren">
 						<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren');event.stopPropagation()">x</a>
 						<br>Gib das Passwort ein<br>
