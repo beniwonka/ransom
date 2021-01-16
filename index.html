@@ -10,14 +10,19 @@
 
 	<div class="inhalt">
 
-	<div id="navileiste"></div>
+	<div id="navileiste">
+		<img id="naviLogo" src="icons/logo_icon.png">
+		<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
+		<p id="timer">00:00</p>
+	</div>
 
 			<div class="ordnereins">
 				<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
 				<br>aufgabe I
+				</div>
 					<div id="einsoeffnen">
 						<div id="browserHeader">
-							<span id="title">aufgabe I</span>
+							<span id="title">Start</span>
 							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div>
@@ -30,11 +35,11 @@
 
 					</div>
 
-			</div>
 
 			<div class="ordnerzwei" onclick="passwordzwei()">
 				<img id="zip" src="icons/zip.png">
-					<br>hinweis.zip	
+					<br>|)|23!|)|23!|\\||_|113!|\\|5.zip
+					</div>	
 					<div id="passwordzwei">
 						<div id="browserHeader">
 							<span id="title">Unarchiver</span>
@@ -53,13 +58,12 @@
 					<div id="textdatei" style="display: none;">
 						<div id="browserHeader">
 							<span id="title">Hinweis</span>
-							<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei');event.stopPropagation()">x</a>
+							<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div><br>
 						<div id="textHinweis">
 						Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
 					</div>
-			</div>
 
 			<div class="google" onclick="googleOpen()">
 				<img src="icons/4.png" alt="MDN">

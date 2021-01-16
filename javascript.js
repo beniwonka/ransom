@@ -7,18 +7,6 @@ function googleOpen() {
       }
     }
 
-function check_deactivate (input_element) {
-  
-  var passwordTwo = input_element.value;
-
-  if (passwordTwo == 'Ich')
-      	document.getElementById ('finale').style.display = 'block',
-  		document.getElementById ('passwordDeaktivieren').style.display = 'none';
-  else
-      	document.getElementById ('finale').style.display = 'none';
-}
-
-
 function einsoeffnen() {
   var x = document.getElementById("einsoeffnen");
   if (x.style.display === "none") {
@@ -34,9 +22,9 @@ function passwordzwei() {
 	var y = document.getElementById("passwordzwei");
 		if (y.style.display === "none") {
 			y.style.display = "block";
-			document.getElementById("zip").src="icons/zip_clicked.png";
+      document.getElementById("zip").src="icons/zip_clicked.png";
 				} else {
-			y.style.display = "block";
+			y.style.display = "none";
 			}
 		}
 
@@ -66,19 +54,10 @@ function toggle_visibility(id, icon) {
           e.style.display = 'none';
           f.src="icons/" + icon + ".png";
        }
-       else {
-          e.style.display = 'block';
-       }
     }
 
-/*function changeImageFolder(id) {
-       var image = document.getElementById(id);
-       if(image.style.display == 'block') {
-       
-    } else {
-    	document.getElementById("ordner").src="icons/ordner.png";
-    }
-}*/
+
+/* Cheaten ist uncool */
 
 
 let antwort = {  
@@ -102,9 +81,10 @@ function check_password (input_element) {
   
   if (password == '3301')
       	document.getElementById ('textdatei').style.display = 'block',
+        document.getElementById("zip").src="icons/zip.png",
   		  document.getElementById ('passwordzwei').style.display = 'none';
   else {
-      	document.getElementById ('textdatei').style.display = 'none';
+      	document.getElementById ('passwordzwei').style.display = 'block';
 	}
 }
 
@@ -119,5 +99,16 @@ function check_google (input_element) {
         document.getElementById ('falsch').style.display = 'block';
         document.getElementById ('leet').style.display = 'none';
 	}
+}
+
+function check_deactivate (input_element) {
+  
+  var passwordTwo = input_element.value;
+
+  if (passwordTwo == 'Ich')
+      	document.getElementById ('finale').style.display = 'block',
+  		document.getElementById ('passwordDeaktivieren').style.display = 'none';
+  else
+      	document.getElementById ('finale').style.display = 'none';
 }
 

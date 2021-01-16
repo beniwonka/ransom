@@ -43,7 +43,35 @@ input {
 	height: 2vw;
 	top: 0px;
 	width: 100%;
+	position: relative;
 }
+
+				#naviLogo {
+					display: inline-block;
+					position: fixed;
+					left: 6%;
+					padding: 0.3vw;
+					height: auto;
+					width: 1.1%;
+				}
+
+				#datum {
+					position: absolute;
+					right: 3%;
+					margin: 0 0 0 0;
+					top: 20%;
+					color: black;
+					font-size: 1.5vw;
+				}
+
+				#timer {
+					position: absolute;
+					right: 10%;
+					margin: 0 0 0 0;
+					top: 20%;
+					color: black;
+					font-size: 1.5vw;
+				}
 
 #browserHeader {
 	border-bottom: 1px solid black;
@@ -206,7 +234,7 @@ input {
 						position: fixed;
 						background-color: white;
 						right: 30vw;
-						bottom: 45vh;
+						bottom: 20vh;
 						width: 40vw;
 						height: 20vh;
 					}
