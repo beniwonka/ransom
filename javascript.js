@@ -50,6 +50,16 @@ function finaleOpen() {
   }
 }
 
+function fotoOpen() {
+  var c = document.getElementById("fotooeffnen");
+  if (c.style.display === "none") {
+    c.style.display = "block";
+    document.getElementById("photo").src="icons/photo_clicked.png";
+  } else {
+    c.style.display = "block";
+  }
+}
+
 function toggle_visibility(id, icon) {
        var e = document.getElementById(id);
        var f = document.getElementById(icon); 

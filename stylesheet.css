@@ -142,31 +142,6 @@ html {
 						height: 30vh;
 					}
 
-						#browserleftcorner {
-							position: sticky;
-						    top: 0px;
-						    left: 0px;
-							max-width: 10%;
-							height: auto;
-						}
-
-						#browserrightcorner {
-							position: sticky;
-						    top: 0px;
-						    right: 0px;
-							max-width: 10%;
-							height: auto;
-						}
-
-						#browsercenter {
-							position: sticky;
-						    top: 0px;
-						    left: 20%;
-							max-width: 55.5%;
-							height: auto;
-							text-align: center;
-						}
-
 						#einsClose, #zweiClose, #zweipunkteinsClose {
 							position: absolute;
 							left: 0px;
@@ -174,17 +149,21 @@ html {
 
 					#fotooeffnen {
 						display: none;
-						position: relative;
-						background-color: none;
+						position: absolute;
+						background-color: white;
 						left: 40vw;
-						top: 20vh;
-						width: 20vw;
-						height: 25vh;
+						top: 30vh;
+						width: 35vw;
+						height: 35vh;
+					}
+
+					#fotooeffnen a {
+						left: 0;
 					}
 
 					#alphabet {
 						max-width: auto;
-						height: 30vh;
+						height: 25vh;
 						}
 
 					#informationeins {
@@ -195,6 +174,18 @@ html {
 						top: 20vh;
 						width: 20vw;
 						height: 25vh;
+					}
+
+					#foto {
+						position: absolute;
+						left: 5%;
+						bottom: 5%;
+					}
+
+					#readMe {
+						position: absolute;
+						right: 40%;
+						top: 20%;
 					}
 
 .ordnerzwei {

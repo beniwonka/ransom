@@ -26,11 +26,13 @@
 							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
 							<div id="block"></div>
 						</div>
-						<div id="foto" onclick="toggle_visibility('fotooeffnen');">
-							<img src="icons/1.png">
+						<div id="foto">
+							<img id="photo" src="icons/photo.png" onclick="fotoOpen();"><br>
+							<span id="ordnerName">Alphabet.jpeg</span>
 						</div> 
-						<div id="text" onclick="toggle_visibility('informationeins');">
-							<img src="icons/1.png">
+						<div id="readMe">
+							<img src="icons/doc.png" onclick="toggle_visibility('informationeins', 'doc');"><br>
+							<span id="ordnerName">ReadMe.txt</span>
 						</div> 
 
 					</div>
@@ -102,7 +104,7 @@
                 					<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
 								</div>
 								</div>
-						</div>
+						
 			
 
 			<div class="deactivate" onclick="finaleOpen()">
@@ -123,6 +125,11 @@
 			
 
 <div id="fotooeffnen">
+	<div id="browserHeader">
+							<span id="title">Alphabet.jpeg</span>
+							<a href="#" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
+							<div id="block"></div>
+						</div>
 <img id="alphabet" src="icons/alphabet.jpg">
 </div>
 
@@ -131,6 +138,6 @@
 </div>
 
 	</div>
-
+</div>
 </body>
 </html>
