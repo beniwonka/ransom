@@ -5,8 +5,6 @@
 [Aktueller Stand](https://beniwonka.github.io/ransom/)
 
 ## Was noch gemacht werden muss:
-
-  * Notepad für Notizen (von Spieler) einfügen
   
   * Boot-Up und Start Screen
 
