@@ -1,3 +1,12 @@
+function hideBoot() {
+  var boot = document.getElementById("bootScreen");
+  var start = document.getElementById("inhalt");
+  if (boot.style.display = "block") {
+    boot.style.display = "none";
+    start.style.display = "block"; 
+}
+}
+
 function googleOpen() {
   var a = document.getElementById("googleBrowser");
     if (a.style.display = "none") {
