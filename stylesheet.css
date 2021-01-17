@@ -15,6 +15,14 @@ html {
   	text-align: center;
 }
 
+.inhalt span {
+	font-size: 1.3vw;
+}
+
+.inhalt a { 
+	font-size: 1.3vw;
+}
+
 
 .inhalt {
 
@@ -284,24 +292,75 @@ html {
 						left: 0;
 					}
 
-						#leet {
-						display: none;
-						position: fixed;
-						background-color: none;
-						right: 50vw;
-						bottom: 30vh;
-						width: 40vw;
-						height: 30vh;
+					#suche {
+						position: absolute;
+						top: 20%;
+						left: 20%;
+						display: block;
+						width: 20vw;
 					}
 
-						#falsch {
+					#banner img {
+						position: absolute;
+						top: 21.5%;
+						left: 5%;
+						width: 5vw;
+						height: auto;
+					}
+
+
+
+					#leet {
 						display: none;
-						position: fixed;
+						position: absolute;
 						background-color: none;
-						right: 50vw;
-						bottom: 30vh;
+						text-align: left;
+						top: 40%;
+						right: 1%;
 						width: 40vw;
 						height: 30vh;
+						padding-left: 5vw;
+					}
+
+					#leet p {
+						margin: 0px 0px 0px 0px;
+					}
+
+					#googleTop {
+						font-size: 1vw;
+						padding-left: 2.5vw;
+					}
+
+					#googleLink {
+						padding-left: 2.5vw;
+					}
+
+					#googleBeschreibung {
+						font-size: 1.2vw;
+						padding-left: 2.5vw;
+						width: 70%;
+					}
+
+					#falsch {
+						position: absolute;
+						text-align: left;
+						display: none;
+						background-color: none;
+						top: 35%;
+						right: 1%;
+						width: 40vw;
+						height: 30vh;
+						padding-left: 5vw;
+					}
+
+					#falsch p {
+						font-size: 1.2vw;
+						padding-left: 2.5vw;
+					}
+
+					#falsch h2 {
+						font-size: 2vw;
+						padding-left: 2.5vw;
 					}
 
 					#suche {

@@ -5,146 +5,196 @@
 	<title>RANSOM</title>
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
-	<script src="javascript.js"></script>
 
-	<div class="inhalt">
+	<body>
 
-	<div id="navileiste">
-		<img id="naviLogo" src="icons/logo_icon.png">
-		<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
-		<p id="timer">00:00</p>
-	</div>
+		<script src="javascript.js"></script>
 
-			<div class="ordnereins">
-				<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
-				<br><span id="ordnerName">Start</span>
-				</div>
-					<div id="einsoeffnen">
-						<div id="browserHeader">
-							<span id="title">Start</span>
-							<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
-							<div id="block"></div>
-						</div>
-						<div id="foto">
-							<img id="photo" src="icons/photo.png" onclick="fotoOpen();"><br>
-							<span id="ordnerName">Alphabet.jpeg</span>
-						</div> 
-						<div id="readMe">
-							<img id="doc" src="icons/doc.png" onclick="infoOpen();"><br>
-							<span id="ordnerName">TryToReadMe.txt</span>
-						</div> 
+		<div class="inhalt">
 
+			<div id="navileiste">
+				<img id="naviLogo" src="icons/logo_icon.png">
+				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
+				<p id="timer">00:00</p>
+			</div>
+
+
+
+					<!-- Aufgabe Eins -->
+
+					<div class="ordnereins">
+						<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
+						<br><span id="ordnerName">Start</span>
 					</div>
 
-
-			<div class="ordnerzwei">
-				<img id="zip" src="icons/zip.png" onclick="passwordzwei();">
-					<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
-					</div>	
-					<div id="passwordzwei">
-						<div id="browserHeader">
-							<span id="title">Unarchiver</span>
-							<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
-							<div id="block"></div>
-						</div>
-						
-						<br>Gib das Passwort ein<br>
-
-								<input id="partitioned" type="password" maxlength="4" onkeyup="check_password (this);" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  onKeyPress="if(this.value.length==4) return false;"/>
-
-						<br>
-					</div>
-						
-					
-					<div id="textdatei" style="display: none;">
-						<div id="browserHeader">
-							<span id="title">Hinweis</span>
-							<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
-							<div id="block"></div>
-						</div><br>
-						<div id="textHinweis">
-						Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
-					</div>
-
-			<div class="google">
-				<img id="google" src="icons/google.png"  onclick="googleOpen()">
-				<br> <span id="ordnerName">Google</span>
-			</div>
-				<div id="googleBrowser">
-					<div id="browserHeader">
-							<span id="title">Google</span>
-							<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
-							<div id="block"></div>
-						</div>
-				
-				<input id="suche" type="text" onkeyup="check_google (this);">
-				<div id="leet">Leetspeek</div>
-				<div id="falsch">Du solltest nach etwas anderem Suchen</div>
-			</div>
-			
-			
-
-			<div class="chat">
-				<img id="chat" src="icons/chat.png" onclick="chatboxOpen();">
-				<br> <span id="ordnerName">Chat.app</span>
-			</div>
-						<div id='chatbox'>
-
+						<div id="einsoeffnen">
+							
 							<div id="browserHeader">
-								<span id="title">Chat</span>
-								<a href="#" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
+								<span id="title">Start</span>
+								<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
-								<div id="chatInhalt">
-								<p>Unknown: Wie lautet deine Antwort? </p>
-								<p id="chatLog"></p>
-                				</div>
-                				<div id="usertext">
-                					<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
-								</div>
-								</div>
-						
-			
+							
+							<div id="foto">
+								<img id="photo" src="icons/photo.png" onclick="fotoOpen();"><br>
+								<span id="ordnerName">Alphabet.jpeg</span>
+							</div> 
+							
+							<div id="readMe">
+								<img id="doc" src="icons/doc.png" onclick="infoOpen();"><br>
+								<span id="ordnerName">TryToReadMe.txt</span>
+							</div> 
 
-			<div class="deactivate">
-				<img id="deactivate" src="icons/deactivate.png" onclick="finaleOpen()">
-				<br> <span id="ordnerName">Antivirus.zip</span>
-			</div>
-				<div id="passwordDeaktivieren">
-					<div id="browserHeader">
-							<span id="title">Google</span>
-							<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
-							<div id="block"></div>
 						</div>
-						<br>Gib das Passwort ein<br>
-							<input type="text" onkeyup="check_deactivate (this);">
-							<br>
+
+
+
+					<!-- Aufgabe Zwei -->
+
+					<div class="ordnerzwei">
+						<img id="zip" src="icons/zip.png" onclick="passwordzwei();">
+						<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>
-					<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
-			
 
-<div id="fotooeffnen">
-	<div id="browserHeader">
-							<span id="title">Alphabet.jpeg</span>
-							<a href="#" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
-							<div id="block"></div>
+						<div id="passwordzwei">
+
+							<div id="browserHeader">
+								<span id="title">Unarchiver</span>
+								<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+							
+								<br>Gib das Passwort ein<br>
+								<input id="partitioned" type="password" maxlength="4" onkeyup="check_password (this);" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  onKeyPress="if(this.value.length==4) return false;"/>
+								<br>
+
 						</div>
-<img id="alphabet" src="icons/alphabet.jpg">
-</div>
+							
+						
+						<div id="textdatei" style="display: none;">
 
-<div id="informationeins">
-	<div id="browserHeader">
-							<span id="title">TryToReadMe.txt</span>
-							<a href="#" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
-							<div id="block"></div>
+							<div id="browserHeader">
+								<span id="title">Hinweis</span>
+								<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+							<br>
+
+							<div id="textHinweis">
+							Eine Antwort in Reih und Glied bist du entfernt von deinem Ziel. <br> Mich findest du hier: Zwei Quartett’ bist du von ihnen begegnet doch was ist die Quersumme?</div>
+
 						</div>
-						<br>
-						<br>
-<img id="readMePhoto" src="icons/word.png">
-</div>
 
-	</div>
-</div>
-</body>
+
+
+					<!-- Google Browser -->
+
+					<div class="google">
+						<img id="google" src="icons/google.png"  onclick="googleOpen()">
+						<br> <span id="ordnerName">Google.webloc</span>
+					</div>
+
+						<div id="googleBrowser">
+
+							<div id="browserHeader">
+								<span id="title">Safari</span>
+								<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+							<div id="banner">
+							<img src="icons/google_icon.png">
+							<input id="suche" type="text" onkeyup="check_google (this);">
+							</div>
+
+							<div id="leet">
+								<p id="googleTop">de.wikipedia.org > wiki > leetspeak</p>
+								<p id="googleLink">Leetspeak - Wikipedia</p>
+								<p id="googleBeschreibung">Leetspeak [ˈliːtspiːk] (auch Leetspeek, 1337; von engl. elite, „Elite“, und speak, „sprechen“) bezeichnet im Netzjargon das Ersetzen von Buchstaben durch ähnlich aussehende Ziffern…</p>
+
+
+							</div>
+
+
+							<div id="falsch"><h2>404. Das ist wohl ein Error.</h2>
+							<p>Deine Suchanfrage wurde nicht auf dem Server gefunden.</p>
+							<p>Such lieber nach etwas anderem.</p></div>
+
+						</div>
+				
+					
+
+					<!-- Chat -->
+
+					<div class="chat">
+						<img id="chat" src="icons/chat.png" onclick="chatboxOpen();">
+						<br> <span id="ordnerName">Chat.app</span>
+					</div>
+
+							<div id='chatbox'>
+
+								<div id="browserHeader">
+									<span id="title">Chat</span>
+									<a href="#" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
+									<div id="block"></div>
+								</div>
+
+								<div id="chatInhalt">
+									<p>Unknown: Wie lautet deine Antwort? </p>
+									<p id="chatLog"></p>
+	                			</div>
+
+	                			<div id="usertext">
+	                				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
+								</div>
+
+							</div>
+							
+
+							
+					<!-- Finale Aufgabe -->
+
+					<div class="deactivate">
+						<img id="deactivate" src="icons/deactivate.png" onclick="finaleOpen()">
+						<br> <span id="ordnerName">Antivirus.zip</span>
+					</div>
+
+					<div id="passwordDeaktivieren">
+						<div id="browserHeader">
+								<span id="title">Google</span>
+								<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+							<br>Gib das Passwort ein<br>
+								<input type="text" onkeyup="check_deactivate (this);">
+								<br>
+						</div>
+						<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
+
+
+
+
+					<!-- zusätzliche Ordner -->
+
+						<div id="fotooeffnen">
+							<div id="browserHeader">
+								<span id="title">Alphabet.jpeg</span>
+								<a href="#" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+							<img id="alphabet" src="icons/alphabet.jpg">
+						</div>
+
+						<div id="informationeins">
+							<div id="browserHeader">
+								<span id="title">TryToReadMe.txt</span>
+								<a href="#" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
+								<div id="block"></div>
+							</div>
+								<br>
+								<br>
+							<img id="readMePhoto" src="icons/word.png">
+						</div>
+
+		</div>
+	</body>
 </html>
