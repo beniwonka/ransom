@@ -1,5 +1,3 @@
-document.getElementById('naviLogo').ondragstart = function () { return false; };
-
 function googleOpen() {
   var a = document.getElementById("googleBrowser");
     if (a.style.display = "none") {
