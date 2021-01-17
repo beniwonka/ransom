@@ -110,7 +110,7 @@ function check_google (input_element) {
   
   var googleEingabe = input_element.value;
 
-  if (googleEingabe == 'Leetspeak') {
+  if (googleEingabe == 'Leetspeak' || googleEingabe == 'leetspeak') {
         document.getElementById ('leet').style.display = 'block';
         document.getElementById ('falsch').style.display = 'none'; }
   else {
@@ -123,10 +123,11 @@ function check_deactivate (input_element) {
   
   var passwordTwo = input_element.value;
 
-  if (passwordTwo == 'Ich')
+  if (passwordTwo == 'ich' || passwordTwo == 'Ich') {
       	document.getElementById ('finale').style.display = 'block',
   		document.getElementById ('passwordDeaktivieren').style.display = 'none';
-  else
+  } else {
       	document.getElementById ('finale').style.display = 'none';
+  }
 }
 
