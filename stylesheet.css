@@ -15,6 +15,7 @@ html {
   	text-align: center;
 }
 
+
 .inhalt span {
 	font-size: 1.3vw;
 }
@@ -173,7 +174,7 @@ html {
 						display: none;
 						position: absolute;
 						background-color: white;
-						left: 40vw;
+						left: 35vw;
 						top: 30vh;
 						width: 35vw;
 						height: 35vh;
@@ -444,6 +445,45 @@ html {
 						bottom: 45vh;
 						width: 40vw;
 						height: 20vh;
+					}
+
+.notePad {
+	position: fixed;
+  	bottom: 40vh;
+  	right: 76vw;
+}
+
+					#noteGeoeffnet {
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
+						display: none;
+						position: fixed;
+						background-color: white;
+						right: 8vw;
+						bottom: 20vh;
+						width: 20vw;
+						height: 30vh;
+					}
+
+					#noteGeoeffnet a {
+						left: 0;
+					}
+
+					#noteGeoeffnet textarea {
+						padding-top: 5%;
+						font-family: ChiKareGo;
+						font-size: 1.2em;
+						width: 90%;
+						height: 50%;
+						border: none;
+						outline: none;
+						resize: none;
+						background-color: none;
+
+					}
+
+					#noteGeoeffnet span {
+						left: 30%;
 					}
 
 

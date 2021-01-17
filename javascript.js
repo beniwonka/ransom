@@ -1,73 +1,68 @@
+document.getElementById('naviLogo').ondragstart = function () { return false; };
+
 function googleOpen() {
   var a = document.getElementById("googleBrowser");
-    if (a.style.display === "none") {
+    if (a.style.display = "none") {
       a.style.display = "block";
       document.getElementById("google").src="icons/google_clicked.png";
-        } else {
-      a.style.display = "none";
       }
     }
 
 function einsoeffnen() {
   var x = document.getElementById("einsoeffnen");
-  if (x.style.display === "none") {
+  if (x.style.display = "none") {
     x.style.display = "block";
     document.getElementById("ordner").src="icons/ordner_clicked.png";
-  } else {
-    x.style.display = "none";
-  }
+  } 
 }
 
+function noteOpen() {
+  var x = document.getElementById("noteGeoeffnet");
+  if (x.style.display = "none") {
+    x.style.display = "block";
+    document.getElementById("note").src="icons/note_clicked.png";
+  } 
+}
 
 function passwordzwei() {
 	var y = document.getElementById("passwordzwei");
-		if (y.style.display === "none") {
+		if (y.style.display = "none") {
 			y.style.display = "block";
       document.getElementById("zip").src="icons/zip_clicked.png";
-				} else {
-			y.style.display = "none";
-			}
+				} 
 		}
 
 
 function chatboxOpen() {
   var z = document.getElementById("chatbox");
-    if (z.style.display === "none") {
+    if (z.style.display = "none") {
       z.style.display = "block";
       document.getElementById("chat").src="icons/chat_clicked.png";
-        } else {
-      z.style.display = "none";
-      }
+        } 
     }
 
 function finaleOpen() {
   var b = document.getElementById("passwordDeaktivieren");
-  if (b.style.display === "none") {
+  if (b.style.display = "none") {
     b.style.display = "block";
     document.getElementById("deactivate").src="icons/deactivate_clicked.png";
-  } else {
-    b.style.display = "none";
-  }
+  } 
 }
 
 function fotoOpen() {
   var c = document.getElementById("fotooeffnen");
-  if (c.style.display === "none") {
+  if (c.style.display = "none") {
     c.style.display = "block";
     document.getElementById("photo").src="icons/photo_clicked.png";
-  } else {
-    c.style.display = "none";
-  }
+  } 
 }
 
 function infoOpen() {
   var c = document.getElementById("informationeins");
-  if (c.style.display === "none") {
+  if (c.style.display = "none") {
     c.style.display = "block";
     document.getElementById("doc").src="icons/doc_clicked.png";
-  } else {
-    c.style.display = "none";
-  }
+  } 
 }
 
 function toggle_visibility(id, icon) {

@@ -13,7 +13,7 @@
 		<div class="inhalt">
 
 			<div id="navileiste">
-				<img id="naviLogo" src="icons/logo_icon.png">
+				<img id="naviLogo" draggable="false" src="icons/logo_icon.png">
 				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
 				<p id="timer">00:00</p>
 			</div>
@@ -23,7 +23,7 @@
 					<!-- Aufgabe Eins -->
 
 					<div class="ordnereins">
-						<img id="ordner"src="icons/ordner.png" onclick="einsoeffnen();">
+						<img id="ordner" draggable="false" src="icons/ordner.png" onclick="einsoeffnen();">
 						<br><span id="ordnerName">Start</span>
 					</div>
 
@@ -31,17 +31,17 @@
 							
 							<div id="browserHeader">
 								<span id="title">Start</span>
-								<a href="#" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							
 							<div id="foto">
-								<img id="photo" src="icons/photo.png" onclick="fotoOpen();"><br>
+								<img id="photo" draggable="false" src="icons/photo.png" onclick="fotoOpen();"><br>
 								<span id="ordnerName">Alphabet.jpeg</span>
 							</div> 
 							
 							<div id="readMe">
-								<img id="doc" src="icons/doc.png" onclick="infoOpen();"><br>
+								<img id="doc" draggable="false" src="icons/doc.png" onclick="infoOpen();"><br>
 								<span id="ordnerName">TryToReadMe.txt</span>
 							</div> 
 
@@ -52,7 +52,7 @@
 					<!-- Aufgabe Zwei -->
 
 					<div class="ordnerzwei">
-						<img id="zip" src="icons/zip.png" onclick="passwordzwei();">
+						<img id="zip" draggable="false" src="icons/zip.png" onclick="passwordzwei();">
 						<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>
 
@@ -60,7 +60,7 @@
 
 							<div id="browserHeader">
 								<span id="title">Unarchiver</span>
-								<a href="#" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							
@@ -75,7 +75,7 @@
 
 							<div id="browserHeader">
 								<span id="title">Hinweis</span>
-								<a href="#" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							<br>
@@ -90,7 +90,7 @@
 					<!-- Google Browser -->
 
 					<div class="google">
-						<img id="google" src="icons/google.png"  onclick="googleOpen()">
+						<img id="google" draggable="false" src="icons/google.png"  onclick="googleOpen()">
 						<br> <span id="ordnerName">Google.webloc</span>
 					</div>
 
@@ -98,11 +98,11 @@
 
 							<div id="browserHeader">
 								<span id="title">Safari</span>
-								<a href="#" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							<div id="banner">
-							<img src="icons/google_icon.png">
+							<img draggable="false" src="icons/google_icon.png">
 							<input id="suche" type="text" onkeyup="check_google (this);">
 							</div>
 
@@ -126,7 +126,7 @@
 					<!-- Chat -->
 
 					<div class="chat">
-						<img id="chat" src="icons/chat.png" onclick="chatboxOpen();">
+						<img draggable="false" id="chat" src="icons/chat.png" onclick="chatboxOpen();">
 						<br> <span id="ordnerName">Chat.app</span>
 					</div>
 
@@ -134,7 +134,7 @@
 
 								<div id="browserHeader">
 									<span id="title">Chat</span>
-									<a href="#" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
+									<a href="#" draggable="false" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
 									<div id="block"></div>
 								</div>
 
@@ -154,14 +154,14 @@
 					<!-- Finale Aufgabe -->
 
 					<div class="deactivate">
-						<img id="deactivate" src="icons/deactivate.png" onclick="finaleOpen()">
+						<img draggable="false" id="deactivate" src="icons/deactivate.png" onclick="finaleOpen()">
 						<br> <span id="ordnerName">Antivirus.zip</span>
 					</div>
 
 					<div id="passwordDeaktivieren">
 						<div id="browserHeader">
 								<span id="title">Google</span>
-								<a href="#" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							<br>Gib das Passwort ein<br>
@@ -171,6 +171,23 @@
 						<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
 
 
+					<!-- NotePad-->
+
+					<div class="notePad">
+						<img draggable="false" id="note" src="icons/note.png" onclick="noteOpen()">
+						<br> <span id="ordnerName">NotePad</span>
+					</div>
+
+						<div id="noteGeoeffnet">
+								<div id="browserHeader">
+									<span id="title">NotePad</span>
+									<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('noteGeoeffnet', 'note');event.stopPropagation()">x</a>
+									<div id="block"></div>
+								</div>
+								<textarea name="comment" form="usrform"></textarea>
+						</div>
+
+
 
 
 					<!-- zusätzliche Ordner -->
@@ -178,7 +195,7 @@
 						<div id="fotooeffnen">
 							<div id="browserHeader">
 								<span id="title">Alphabet.jpeg</span>
-								<a href="#" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 							<img id="alphabet" src="icons/alphabet.jpg">
@@ -187,12 +204,12 @@
 						<div id="informationeins">
 							<div id="browserHeader">
 								<span id="title">TryToReadMe.txt</span>
-								<a href="#" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
 								<div id="block"></div>
 							</div>
 								<br>
 								<br>
-							<img id="readMePhoto" src="icons/word.png">
+							<img draggable="false" id="readMePhoto" src="icons/word.png">
 						</div>
 
 		</div>
