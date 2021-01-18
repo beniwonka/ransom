@@ -11,8 +11,8 @@ var main = new Audio("sound/main.mp3");
 });
 
     main.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
+        main.currentTime = 0;
+        main.play();
     }, false);
 main.play();
 
