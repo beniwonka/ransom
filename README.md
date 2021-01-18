@@ -6,8 +6,6 @@
 
 ## Was noch gemacht werden muss:
   
-  * Countdown (nach Ablauf wird Spiel gestoppt)
-
   * Final-Screen, wenn Rätsel gelöst wurde 
 
   * SOUNDS, SOUNDS, SOUNDS!
