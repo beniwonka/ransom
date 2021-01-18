@@ -124,12 +124,16 @@ function cicadaRedet() {
   let eingabe = document.getElementById("userBox").value;
   document.getElementById("userBox").value = "";
   document.getElementById("chatLog").innerHTML += "DU: " + eingabe + "<br><br>";
-  if (eingabe in antwort) {
+  var online = 1;
+  if (eingabe in antwort) { 
   document.getElementById("chatLog").innerHTML += "CICADA: " + antwort[eingabe] + "<br><br>";
-    } else {
-    document.getElementById("chatLog").innerHTML += "CICADA: Ich warte auf die Loesung." + "<br><br>";
-    }
-}
+  online += 1;
+   if (online = 1 ) {
+    document.getElementById("chatLog").innerHTML += "CICADA IST OFFLINE" + "<br><br>";
+  } }}
+
+  
+
 
 function check_password (input_element) {
   
