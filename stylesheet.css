@@ -423,7 +423,6 @@ a, p, span {
 						bottom: 30vh;
 				  		right: 40vw;
 				  		text-align: left;
-				  		overflow:scroll;
 					}
 
 
@@ -446,7 +445,6 @@ a, p, span {
 					#chatInhalt {
 						padding-left: 1vw ;
 						padding-right: 1vw;
-				  		text-overflow: ellipsis;
 					}
 
 .deactivate {
@@ -520,8 +518,8 @@ a, p, span {
 						padding-top: 5%;
 						font-family: ChiKareGo;
 						font-size: 1.2em;
-						width: 90%;
-						height: 50%;
+						width: 100%;
+						height: 90%;
 						border: none;
 						outline: none;
 						resize: none;
