@@ -5,12 +5,6 @@ var main = new Audio("sound/main.mp3");
     click.volume = 0.2;
     click.play();
   }
-  
-    main.addEventListener('ended', function() {
-        main.currentTime = 0;
-        main.play();
-    }, false);
-main.play();
 
 function hideBoot() {
           var boot = document.getElementById("bootScreen");
@@ -174,3 +168,9 @@ function check_deactivate (input_element) {
       	document.getElementById ('finalScreen').style.display = 'none';
   }
 }
+
+    main.addEventListener('ended', function() {
+        main.currentTime = 0;
+        main.play();
+    }, false);
+main.play();
