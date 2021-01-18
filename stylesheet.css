@@ -412,7 +412,6 @@ a, p, span {
 					}
 
 					#chatbox {
-						overflow-y: scroll;
 						font-size: 1.3vw;
 						border-radius: 5px;
 						box-shadow: 1px 1px 1px black;
@@ -444,8 +443,11 @@ a, p, span {
 
 
 					#chatInhalt {
+						overflow-y: scroll;
+						position: absolute;
 						padding-left: 1vw ;
 						padding-right: 1vw;
+						height: 80%;
 					}
 
 .deactivate {
