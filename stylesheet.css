@@ -940,5 +940,10 @@ a, p, span {
 	padding-top: 5vw;
 }
 
+#finaleEingabe {
+		outline: none;
+		font-family: ChiKareGo;
+		font-size: 0.9em;
 
+}
 }
