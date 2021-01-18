@@ -1,5 +1,5 @@
 var click = new Audio("sound/click.mp3");
-var main = new Audio("sound/main.mp3");
+var main = new Audio("sound/music.mp3");
 
   document.onclick = function() {
     click.volume = 0.2;
