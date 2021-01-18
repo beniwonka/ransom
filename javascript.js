@@ -1,10 +1,32 @@
 function hideBoot() {
-  var boot = document.getElementById("bootScreen");
-  var start = document.getElementById("inhalt");
-  if (boot.style.display = "block") {
-    boot.style.display = "none";
-    start.style.display = "block"; 
-}
+          var boot = document.getElementById("bootScreen");
+          var start = document.getElementById("inhalt");
+          if (boot.style.display = "block") {
+            boot.style.display = "none";
+            start.style.display = "block";
+
+            const startMinuten = 1;
+        let time = startMinuten * 60;
+        setInterval(updateTimer, 1000);
+
+        function updateTimer() {
+          const minuten = Math.floor(time / 60);
+          let sekunde = time % 60;
+
+          sekunde = sekunde < 10 ? '0' + sekunde : sekunde; 
+
+          document.getElementById("timer").innerHTML = minuten + ':' + sekunde;
+
+          time--;
+          time = time < 0 ? 0 : time; 
+
+          if (minuten == 0 && sekunde == 0 ) { 
+          document.getElementById ('inhalt').style.animation = 'fadeOut("slow")';
+          document.getElementById ('inhalt').style.display = 'none';
+          document.getElementById ('errorScreen').style.display = 'block';
+          }
+        } 
+      }
 }
 
 function googleOpen() {

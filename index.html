@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 	<meta charset="utf-8"/>
 	<title>RANSOM</title>
 	<link rel="stylesheet" href="stylesheet.css">
+
 </head>
 
 	<body>
@@ -21,29 +24,38 @@
 		<p>Loading…</p>
 		<p>CICADA: Du wurdest <i>leider</i> gehackt…</p>
 		<p>Loading…</p>
-		<p>CICADA: Ich geb’ dir 10 MINUTEN um mein kleines Rätsel zu lösen.</p>
+		<p>CICADA: Ich geb’ dir 10 Minuten um mein kleines Raetsel zu loesen.</p>
 		<p>Loading…</p>
-		<p>CICADA: Sonst kannst du dich von deinem schönen Oldschool Mac verabschieden.</p>
+		<p>CICADA: Sonst kannst du dich von deinem schoenen Oldschool Mac verabschieden.</p>
 		<p>Loading…</p>
-		<p>CICADA: Viel Spaß!</p>
+		<p>CICADA: Viel Spass!</p>
 		<p>CICADA: Eher viel Erfolg!</p>
 		<br>
 		<br>
-		<p onclick="hideBoot();">KLICK HIER UM ZU STARTEN.</p>
+		<p onclick="hideBoot();"><u>Klick hier um zu starten</u></p>
 		
 			</div>
 
 		</div>
 
-		<div class="errorScreen">
+		<div id="errorScreen">
+			<div id="errorText">
+		<p>CICADA: Leider, leider, hat die Zeit wohl nicht ausgereicht.</p>
+		<p>Loading…</p>
+		<br>
+		<p>CICADA: Aber ich gebe dir noch eine Chance.</p>
+		<br>
+		<p onclick="location.reload();"><u>Klick hier um erneut zu starten</u></p>
 		</div>
+
+	</div>
 
 		<div id="inhalt">
 
 			<div id="navileiste">
 				<img id="naviLogo" draggable="false" src="icons/logo_icon.png">
 				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
-				<p id="timer">00:00</p>
+				<p id="timer">1:00</p>
 			</div>
 
 
