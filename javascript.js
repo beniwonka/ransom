@@ -7,8 +7,8 @@ var main = new Audio("sound/main.mp3");
   }
   
     main.addEventListener('ended', function() {
-        maint.currentTime = 0;
-        maint.play();
+        main.currentTime = 0;
+        main.play();
     }, false);
 main.play();
 
