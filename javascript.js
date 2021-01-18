@@ -1,3 +1,21 @@
+var click = new Audio("sound/click.mp3");
+var main = new Audio("sound/main.mp3");
+
+  document.onclick = function() {
+    click.volume = 0.2;
+    click.play();
+  }
+
+  window.addEventListener("DOMContentLoaded", event => {
+  main.play();
+});
+
+    main.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+main.play();
+
 function hideBoot() {
           var boot = document.getElementById("bootScreen");
           var start = document.getElementById("inhalt");
@@ -108,17 +126,17 @@ function toggle_visibility(id, icon) {
 
 
 let antwort = {  
-  "21" : "Schoen dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Loesung. Kennst du mich, so freut es dich. Kennst du mich nicht, so suche mich: Du findest mich ganz sicherlich. Ich bin des Raetsels Loesung",
+  "21" : "Schoen dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Loesung. Kennst du mich, so freut es dich. Kennst du mich nicht, so suche mich: Du findest mich ganz sicherlich. <i>Ich</i> bin des Raetsels Loesung",
 }
 
-function unknownRedet() {
+function cicadaRedet() {
   let eingabe = document.getElementById("userBox").value;
   document.getElementById("userBox").value = "";
-  document.getElementById("chatLog").innerHTML += "Du: " + eingabe + "<br><br>";
+  document.getElementById("chatLog").innerHTML += "DU: " + eingabe + "<br><br>";
   if (eingabe in antwort) {
-  document.getElementById("chatLog").innerHTML += "Unknown: " + antwort[eingabe] + "<br><br>";
+  document.getElementById("chatLog").innerHTML += "CICADA: " + antwort[eingabe] + "<br><br>";
     } else {
-    document.getElementById("chatLog").innerHTML += "Unknown: Ich warte auf die Loesung." + "<br><br>";
+    document.getElementById("chatLog").innerHTML += "CICADA: Ich warte auf die Loesung." + "<br><br>";
     }
 }
 
@@ -153,10 +171,10 @@ function check_deactivate (input_element) {
   var passwordTwo = input_element.value;
 
   if (passwordTwo == 'ich' || passwordTwo == 'Ich') {
-      	document.getElementById ('finale').style.display = 'block',
-  		document.getElementById ('passwordDeaktivieren').style.display = 'none';
+          document.getElementById ('inhalt').style.animation = 'fadeOut("slow")';
+          document.getElementById ('inhalt').style.display = 'none';
+          document.getElementById ('finalScreen').style.display = 'block';
   } else {
-      	document.getElementById ('finale').style.display = 'none';
+      	document.getElementById ('finalScreen').style.display = 'none';
   }
 }
-

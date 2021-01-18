@@ -13,6 +13,24 @@
 
 		<script src="javascript.js"></script>
 
+		<div id="finalScreen">
+			<div id="finalText">
+		<p>CICADA: Du hast es geschafft.</p>
+		<p>Loading…</p>
+		<br>
+		<p>CICADA: Oft tragen wir die Loesung schon in uns,</p>
+		<p>aber sehen es erst zu spaet.</p>
+		<p>Loading…</p>
+		<br>
+		<p>CICADA: Danke fuer deine Zeit, pass auf dich auf.</p>
+		<p>Und bleib lieb!</p>
+		<p>Loading…</p>
+		<br>
+		<br>
+		<p id="titlescreen">RANSOM<br><br><br>2021</p>
+		</div>
+		</div>
+
 		<div id="bootScreen">
 			<div id="bootText">
 		<p>RANSOM OS</p>
@@ -71,7 +89,7 @@
 							
 							<div id="browserHeader">
 								<span id="title">Start</span>
-								<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							
@@ -100,7 +118,7 @@
 
 							<div id="browserHeader">
 								<span id="title">Unarchiver</span>
-								<a href="#" draggable="false" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="zweiClose" onclick="toggle_visibility('passwordzwei', 'zip');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							
@@ -115,7 +133,7 @@
 
 							<div id="browserHeader">
 								<span id="title">Hinweis</span>
-								<a href="#" draggable="false" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="zweipunkteinsClose" onclick="toggle_visibility('textdatei', '#');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							<br>
@@ -138,7 +156,7 @@
 
 							<div id="browserHeader">
 								<span id="title">Safari</span>
-								<a href="#" draggable="false" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							<div id="banner">
@@ -174,17 +192,17 @@
 
 								<div id="browserHeader">
 									<span id="title">Chat</span>
-									<a href="#" draggable="false" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation()">x</a>
+									<a href="#" draggable="false" id="chatClose" onclick="toggle_visibility('chatbox', 'chat');event.stopPropagation(), click.play();">x</a>
 									<div id="block"></div>
 								</div>
 
 								<div id="chatInhalt">
-									<p>Unknown: Wie lautet deine Antwort? </p>
+									<p>CICADA: Wie lautet deine Antwort? </p>
 									<p id="chatLog"></p>
 	                			</div>
 
 	                			<div id="usertext">
-	                				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {unknownRedet()}" autofocus>
+	                				<input type="text" id="userBox" onkeydown="if (event.keyCode == 13) {cicadaRedet()}" autofocus>
 								</div>
 
 							</div>
@@ -201,14 +219,13 @@
 					<div id="passwordDeaktivieren">
 						<div id="browserHeader">
 								<span id="title">Bereit?</span>
-								<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							<br>Wie lautet deine Loesung?<br>
 								<input type="text" onkeyup="check_deactivate (this);">
 								<br>
 						</div>
-						<div id="finale" style="display: none;">Glückwunsch! Du hast zu dir selbst gefunden.</div>
 
 
 					<!-- NotePad-->
@@ -221,7 +238,7 @@
 						<div id="noteGeoeffnet">
 								<div id="browserHeader">
 									<span id="title">NotePad</span>
-									<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('noteGeoeffnet', 'note');event.stopPropagation()">x</a>
+									<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('noteGeoeffnet', 'note');event.stopPropagation(), click.play();">x</a>
 									<div id="block"></div>
 								</div>
 								<textarea name="comment" form="usrform"></textarea>
@@ -235,7 +252,7 @@
 						<div id="fotooeffnen">
 							<div id="browserHeader">
 								<span id="title">Alphabet.jpeg</span>
-								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							<img id="alphabet" src="icons/alphabet.jpg">
@@ -244,7 +261,7 @@
 						<div id="informationeins">
 							<div id="browserHeader">
 								<span id="title">TryToReadMe.txt</span>
-								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation()">x</a>
+								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 								<br>
@@ -252,9 +269,6 @@
 							<img draggable="false" id="readMePhoto" src="icons/word.png">
 						</div>
 
-		</div>
-
-		<div class="finaleScreen">
 		</div>
 	</body>
 </html>

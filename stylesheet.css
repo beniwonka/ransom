@@ -15,7 +15,7 @@ html {
   	text-align: center;
 }
 
-p {
+a, p, span {
 	cursor: default;
 }
 
@@ -412,6 +412,7 @@ p {
 					}
 
 					#chatbox {
+						font-size: 1.3vw;
 						border-radius: 5px;
 						box-shadow: 1px 1px 1px black;
 						display: none;
@@ -507,11 +508,13 @@ p {
 						bottom: 20vh;
 						width: 20vw;
 						height: 30vh;
+						font-size: 1.1vw;
 					}
 
 					#noteGeoeffnet a {
 						left: 0;
 					}
+
 
 					#noteGeoeffnet textarea {
 						padding-top: 5%;
@@ -715,8 +718,8 @@ p {
 
 #bootScreen p {
 
-		line-height: 4px;   /* within paragraph */
-  		margin-bottom: 5px; /* between paragraphs */
+		line-height: 4px;   
+  		margin-bottom: 5px; 
 		font-size: 1.5vw;
 		text-align: left;
 		color: white;
@@ -802,4 +805,93 @@ p {
 	top: 40%;
 	left: 15%;
 }
+
+@keyframes finalScreen { 
+	100% { opacity: 1; }
+}
+#finalScreen p {
+	animation: bootingScreen .5s forwards;
+}
+#finalScreen p:nth-child(1) {
+	animation-delay: 3s;
+}
+#finalScreen p:nth-child(2) {
+	animation-delay: 4s;
+}
+#finalScreen p:nth-child(3) {
+	animation-delay: 4s;
+}
+#finalScreen p:nth-child(4) {
+	animation-delay: 7s;
+}
+#finalScreen p:nth-child(5) {
+	animation-delay: 10s;
+}
+#finalScreen p:nth-child(6) {
+	animation-delay: 10.5s;
+}
+#finalScreen p:nth-child(7) {
+	animation-delay: 13s;
+}
+#finalScreen p:nth-child(8) {
+	animation-delay: 16s;
+}
+#finalScreen p:nth-child(9) {
+	animation-delay: 17.5s;
+}
+#finalScreen p:nth-child(10) {
+	animation-delay: 18.5s;
+}
+#finalScreen p:nth-child(11) {
+	animation-delay: 19s;
+}
+#finalScreen p:nth-child(12) {
+	animation-delay: 19.5s;
+}
+#finalScreen p:nth-child(13) {
+	animation-delay: 21s;
+}
+
+
+#finalScreen {
+	display: none;
+    content: "";
+    background-color: #171717;
+	animation: flicker .005s infinite;
+	overflow: auto;
+	align-content: center;
+	justify-content: center;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 1vw;
+	border-top-left-radius: 1vw;
+	width: 90vw;
+	height: 70vh;
+
+}
+
+#finalScreen p {
+
+		line-height: 4px;   /* within paragraph */
+  		margin-bottom: 5px; /* between paragraphs */
+		font-size: 1.5vw;
+		text-align: center;
+		color: white;
+		opacity: 0;
+}
+
+#finalScreen::before {
+	animation: fadeIn("slow");
+}
+
+#finalScreen::after {
+	animation: finalScreen;
+	animation-iteration-count: 1;
+}
+
+#finalText {
+	padding-top: 5vw;
+}
+
+
 }
