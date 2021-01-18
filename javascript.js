@@ -5,7 +5,7 @@ function hideBoot() {
             boot.style.display = "none";
             start.style.display = "block";
 
-            const startMinuten = 1;
+            const startMinuten = 10;
         let time = startMinuten * 60;
         setInterval(updateTimer, 1000);
 
