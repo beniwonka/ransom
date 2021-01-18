@@ -6,8 +6,4 @@
 
 ## Was noch gemacht werden muss:
   
-  * Final-Screen, wenn Rätsel gelöst wurde 
-
-  * SOUNDS, SOUNDS, SOUNDS!
-  
   * Nice to have: Finder-Fenster verschieben
