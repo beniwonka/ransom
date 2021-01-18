@@ -389,6 +389,50 @@ a, p, span {
 						padding-left: 2.5vw;
 					}
 
+					#cicada {
+						position: absolute;
+						text-align: left;
+						display: none;
+						background-color: none;
+						top: 35%;
+						right: 1%;
+						width: 40vw;
+						height: 30vh;
+						padding-left: 5vw;
+					}
+
+					#cicada p {
+						font-size: 1.2vw;
+						padding-left: 2.5vw;
+					}
+
+					#cicada h2 {
+						font-size: 2vw;
+						padding-left: 2.5vw;
+					}
+
+					#drei {
+						position: absolute;
+						text-align: left;
+						display: none;
+						background-color: none;
+						top: 35%;
+						right: 1%;
+						width: 40vw;
+						height: 30vh;
+						padding-left: 5vw;
+					}
+
+					#drei p {
+						font-size: 1.2vw;
+						padding-left: 2.5vw;
+					}
+
+					#drei h2 {
+						font-size: 2vw;
+						padding-left: 2.5vw;
+					}
+
 					#suche {
 						outline: none;
 						font-family: ChiKareGo;

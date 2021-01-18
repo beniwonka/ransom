@@ -154,12 +154,40 @@ function check_google (input_element) {
 
   if (googleEingabe == 'Leetspeak' || googleEingabe == 'leetspeak') {
         document.getElementById ('leet').style.display = 'block';
-        document.getElementById ('falsch').style.display = 'none'; }
+        document.getElementById ('falsch').style.display = 'none';
+        document.getElementById ('cicada').style.display = 'none';
+        document.getElementById ('drei').style.display = 'none'; }
+    else if (googleEingabe == 'cicada' || googleEingabe == 'Cicada') {
+        document.getElementById ('cicada').style.display = 'block';
+        document.getElementById ('falsch').style.display = 'none';
+        document.getElementById ('leet').style.display = 'none';
+        document.getElementById ('drei').style.display = 'none'; }
+    else if (googleEingabe == '|)|23!' || googleEingabe == '|)|23! ') {
+        document.getElementById ('cicada').style.display = 'none';
+        document.getElementById ('falsch').style.display = 'none';
+        document.getElementById ('leet').style.display = 'none';
+        document.getElementById ('drei').style.display = 'block'; }
   else {
         document.getElementById ('falsch').style.display = 'block';
         document.getElementById ('leet').style.display = 'none';
+        document.getElementById ('cicada').style.display = 'none'
+        document.getElementById ('drei').style.display = 'none';;
 	}
 }
+
+/*function check_google_twice (input_element) {
+  
+  var googleEingabe = input_element.value;
+
+  if (googleEingabe == 'cicada' || googleEingabeZwei == 'Cicada') {
+        document.getElementById ('cicada').style.display = 'block';
+        document.getElementById ('falsch').style.display = 'none'; }
+  else {
+        document.getElementById ('falsch').style.display = 'block';
+        document.getElementById ('cicada').style.display = 'none';
+        document.getElementById ('leet').style.display = 'none';
+  }
+}*/
 
 function check_deactivate (input_element) {
   
