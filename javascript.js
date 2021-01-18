@@ -117,7 +117,7 @@ function toggle_visibility(id, icon) {
 
 
 let antwort = {  
-  "21" : "Schoen dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Loesung: Kennst du mich, so freut es d<i>ich</i>. Kennst du mich nicht, so suche mich. Du findest mich ganz sicherlich, <br>»Ich bin des Raetsels Loesung.«"
+  "21" : "Schoen dich zu sehen, keine Sorge… ich mach es dir nicht mehr so schwer… Hier findest du die Loesung:<br> Kennst du mich, so freut es d<i>ich</i>. Kennst du mich nicht, so suche mich. Du findest mich ganz sicherlich, <br>»Ich bin des Raetsels Loesung.«"
 }
 
 function cicadaRedet() {
