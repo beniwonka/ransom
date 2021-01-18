@@ -439,6 +439,7 @@ a, p, span {
 						background-color: black;
 						outline: none;
 						border: 0;
+						border-radius: 5px;
 					}
 
 
@@ -447,7 +448,7 @@ a, p, span {
 						position: absolute;
 						padding-left: 1vw ;
 						padding-right: 1vw;
-						height: 80%;
+						height: 90%;
 					}
 
 .deactivate {
