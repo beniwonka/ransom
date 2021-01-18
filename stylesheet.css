@@ -511,6 +511,7 @@ a, p, span {
 						width: 20vw;
 						height: 20vh;
 						font-size: 1.1vw;
+						overflow: hidden;
 					}
 
 					#noteGeoeffnet a {
@@ -523,7 +524,7 @@ a, p, span {
 						font-family: ChiKareGo;
 						font-size: 1.2em;
 						width: 90%;
-						height: 60%;
+						height: 75%;
 						border: none;
 						outline: none;
 						resize: none;
