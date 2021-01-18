@@ -5,14 +5,10 @@ var main = new Audio("sound/main.mp3");
     click.volume = 0.2;
     click.play();
   }
-
-  window.addEventListener("DOMContentLoaded", event => {
-  main.play();
-});
-
+  
     main.addEventListener('ended', function() {
-        main.currentTime = 0;
-        main.play();
+        maint.currentTime = 0;
+        maint.play();
     }, false);
 main.play();
 
