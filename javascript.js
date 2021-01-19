@@ -46,6 +46,33 @@ function googleOpen() {
       }
     }
 
+function ausschalten() {
+  var a = document.getElementById("ausschaltenNachfrage");
+  var b = document.getElementById("dropdown");
+    if (a.style.display = "none") {
+      b.style.display ="none";
+      a.style.display = "block";
+      }
+    }
+
+function neustarten() {
+  var a = document.getElementById("neustartNachfrage");
+  var b = document.getElementById("dropdown");
+    if (a.style.display = "none") {
+      b.style.display ="none";
+      a.style.display = "block";
+      }
+    }
+
+function dropdownOeffnen() {
+  var a = document.getElementById("dropdown");
+    if (a.style.display = "none") {
+      a.style.display = "block"; 
+}}
+  
+
+ 
+
 function einsoeffnen() {
   var x = document.getElementById("einsoeffnen");
   if (x.style.display = "none") {
@@ -111,6 +138,20 @@ function toggle_visibility(id, icon) {
           f.src="icons/" + icon + ".png";
        }
     }
+
+function toggle_dropdown() {
+       var g = document.getElementById("dropdown");
+       if(g.style.display == 'block') {
+          g.style.display = 'none';
+       }
+    }
+
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById('dropdown');
+  if (!container.contains(e.target)) {
+    container.style.display = 'none';
+  }
+});
 
 
 /* Cheaten ist uncool */

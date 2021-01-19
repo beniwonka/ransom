@@ -86,6 +86,90 @@ a, p, span {
 					font-size: 1.5vw;
 				}
 
+				#dropdown {
+					display: none;
+					position: absolute;
+					background-color: white;
+					top: 2.1vw;
+					left: 1%;
+					border-radius: 5px;
+					height: 10vh;
+					width: 15vw;
+					align-content: left;
+					margin-right: 20vw;
+					margin-bottom: 20vh;
+				}
+
+				#dropdown p {
+					position: absolute;
+					font-size: 1.2vw;
+					left: -3vw;
+					width: 100%;
+					top: 2%;
+					position: relative;
+				}
+
+				#dropdown p:hover {
+				color: grey;
+				}
+
+
+
+				#neustartNachfrage {
+						font-size:1.2vw;
+						display: none;
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
+						position: fixed;
+						background-color: white;
+						right: 40vw;
+						bottom: 52vh;
+						width: 20vw;
+						height: 15vh;
+						overflow: hidden;
+					}
+
+				#neustartNachfrage button {
+					font-family: ChiKareGo;
+					    font-size:1.2vw;
+      					width: 15vw;
+      					margin: 0 auto;
+      					background-color: black;
+      					outline: none;
+      					border: none;
+      					color: white;
+      					border-radius: 5px;
+				}
+
+				#neustartInhalt {
+					width: 15vw;
+					margin: 0 auto;
+				}
+				
+
+				#ausschaltenNachfrage {
+						font-size:1.2vw;
+						display: none;
+						border-radius: 5px;
+						box-shadow: 1px 1px 1px black;
+						display: none;
+						position: fixed;
+						background-color: white;
+						right: 40vw;
+						bottom: 52vh;
+						width: 20vw;
+						height: 10vh;
+						overflow: hidden;
+				}
+
+				#ausschaltInhalt {
+					width: 15vw;
+					margin: 0 auto;
+				}
+
+
+
+
 #browserHeader {
 	border-bottom: 1px solid black;
 	background: url("icons/browser_back.png") 0 50% repeat-x;
@@ -523,14 +607,6 @@ a, p, span {
 						height: 100px;
 					}
 
-					#finale {
-						position: fixed;
-						background-color: white;
-						right: 30vw;
-						bottom: 45vh;
-						width: 40vw;
-						height: 20vh;
-					}
 
 .notePad {
 	position: fixed;

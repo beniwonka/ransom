@@ -70,13 +70,6 @@
 
 		<div id="inhalt">
 
-			<div id="navileiste">
-				<img id="naviLogo" draggable="false" src="icons/logo_icon.png">
-				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
-				<p id="timer">20:00</p>
-			</div>
-
-
 
 					<!-- Aufgabe Eins -->
 
@@ -269,6 +262,40 @@
 								<br>
 							<img draggable="false" id="readMePhoto" src="icons/word.png">
 						</div>
+
+				<div id="neustartNachfrage">
+					<div id="browserHeader">
+					<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('neustartNachfrage', '#');event.stopPropagation(), click.play();">x</a>
+					<div id="block"></div>
+				</div>
+					<div id="neustartInhalt">
+					<p> Moechtest du das Spiel wirklich neu starten? </p>
+					<button onclick="location.reload();">Neu Starten</button>
+				</div>
+				</div>
+
+
+				<div id="ausschaltenNachfrage">
+					<div id="browserHeader">
+					<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('ausschaltenNachfrage', '#');event.stopPropagation(), click.play();">x</a>
+					<div id="block"></div>
+				</div>
+					<div id="ausschaltInhalt">
+					<p> Gib doch nicht so einfach auf, du schaffst es schon.</p>
+				</div>
+				</div>
+
+				<div id="navileiste">
+				<img id="naviLogo" draggable="false" src="icons/logo_icon.png" onclick="dropdownOeffnen()">
+				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
+				<p id="timer">20:00</p>
+
+				<div id="dropdown" onclick="toggle_dropdown();">
+				<p id="neustartButton" onclick="neustarten();"> Neustarten </p>
+				<p id="ausschaltButton" onclick="ausschalten();"> Ausschalten </p>
+				</div>
+
+			</div>
 
 		</div>
 	</body>
