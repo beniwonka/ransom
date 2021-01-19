@@ -107,10 +107,11 @@ a, p, span {
 					width: 100%;
 					top: 2%;
 					position: relative;
+					box-shadow: 1px 1px 1px black;
 				}
 
 				#dropdown p:hover {
-				color: grey;
+				text-decoration: underline;
 				}
 
 
