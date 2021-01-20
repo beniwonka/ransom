@@ -139,13 +139,6 @@ function toggle_visibility(id, icon) {
        }
     }
 
-function toggle_dropdown() {
-       var g = document.getElementById("dropdown");
-       if(g.style.display == 'block') {
-          g.style.display = 'none';
-       }
-    }
-
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById('dropdown');
   if (!container.contains(e.target)) {
@@ -154,7 +147,7 @@ document.addEventListener('mouseup', function(e) {
 });
 
 
-/* Cheaten ist uncool */
+/* ---- Cheaten ist uncool ---- */
 
 
 let antwort = {  
@@ -171,9 +164,9 @@ function cicadaRedet() {
   online += 1;
    if (online = 1 ) {
     document.getElementById("chatLog").innerHTML += "CICADA IST OFFLINE" + "<br><br>";
-  } }}
-
-  
+    } 
+  }
+}
 
 
 function check_password (input_element) {
@@ -215,20 +208,6 @@ function check_google (input_element) {
         document.getElementById ('drei').style.display = 'none';;
 	}
 }
-
-/*function check_google_twice (input_element) {
-  
-  var googleEingabe = input_element.value;
-
-  if (googleEingabe == 'cicada' || googleEingabeZwei == 'Cicada') {
-        document.getElementById ('cicada').style.display = 'block';
-        document.getElementById ('falsch').style.display = 'none'; }
-  else {
-        document.getElementById ('falsch').style.display = 'block';
-        document.getElementById ('cicada').style.display = 'none';
-        document.getElementById ('leet').style.display = 'none';
-  }
-}*/
 
 function check_deactivate (input_element) {
   

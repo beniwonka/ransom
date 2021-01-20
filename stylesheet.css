@@ -20,13 +20,12 @@ a, p, span {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
 }
 
 #inhalt span {
@@ -120,10 +119,8 @@ a, p, span {
 				}
 
 				#dropdown p:hover {
-				text-decoration: underline;
+					text-decoration: underline;
 				}
-
-
 
 				#neustartNachfrage {
 						font-size:1.2vw;
@@ -137,10 +134,10 @@ a, p, span {
 						width: 20vw;
 						height: 15vh;
 						overflow: hidden;
-					}
+				}
 
 				#neustartNachfrage button {
-					font-family: ChiKareGo;
+						font-family: ChiKareGo;
 					    font-size:1.2vw;
       					width: 15vw;
       					margin: 0 auto;
@@ -152,8 +149,8 @@ a, p, span {
 				}
 
 				#neustartInhalt {
-					width: 15vw;
-					margin: 0 auto;
+						width: 15vw;
+						margin: 0 auto;
 				}
 				
 
@@ -173,8 +170,8 @@ a, p, span {
 				}
 
 				#ausschaltInhalt {
-					width: 15vw;
-					margin: 0 auto;
+						width: 15vw;
+						margin: 0 auto;
 				}
 
 
@@ -273,7 +270,7 @@ a, p, span {
 					#einsClose, #zweiClose, #zweipunkteinsClose {
 						position: absolute;
 						left: 0px;
-						}
+					}
 
 					#fotooeffnen {
 						border-radius: 5px;
@@ -294,7 +291,7 @@ a, p, span {
 					#alphabet {
 						max-width: auto;
 						height: 25vh;
-						}
+					}
 
 					#informationeins {
 						border-radius: 5px;
@@ -427,8 +424,6 @@ a, p, span {
 						width: 5vw;
 						height: auto;
 					}
-
-
 
 					#leet {
 						display: none;
@@ -754,21 +749,20 @@ a, p, span {
     }
 }
 
-
-#inhalt::after {
-	animation: flicker .15s infinite;
-    content: " ";
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, .08);
-    opacity: 0;
-    z-index: 10;
-    pointer-events:none
-}
+					#inhalt::after {
+						animation: flicker .15s infinite;
+					    content: " ";
+					    display: none;
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    bottom: 0;
+					    right: 0;
+					    background: rgba(18, 16, 16, .08);
+					    opacity: 0;
+					    z-index: 10;
+					    pointer-events:none
+					}
 
 @keyframes bootingScreen { 
 	100% { opacity: 1; }
@@ -834,42 +828,40 @@ a, p, span {
 	animation-delay: 17.3s;
 }
 
-#bootScreen {
-	display: block;
-    content: "";
-    background-color: #171717;
-	animation: flicker .005s infinite;
-	overflow: auto;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	border-top-right-radius: 1vw;
-	border-top-left-radius: 1vw;
-	width: 90vw;
-	height: 70vh;
+					#bootScreen {
+						display: block;
+					    content: "";
+					    background-color: #171717;
+						animation: flicker .005s infinite;
+						overflow: auto;
+						border-bottom-right-radius: 25px;
+						border-bottom-left-radius: 25px;
+						border-top-right-radius: 1vw;
+						border-top-left-radius: 1vw;
+						width: 90vw;
+						height: 70vh;
 
-}
+					}
 
-#bootScreen p {
+					#bootScreen p {
+						line-height: 4px;   
+					  	margin-bottom: 5px; 
+						font-size: 1.5vw;
+						text-align: left;
+						color: white;
+						opacity: 0;
+					}
 
-		line-height: 4px;   
-  		margin-bottom: 5px; 
-		font-size: 1.5vw;
-		text-align: left;
-		color: white;
-		opacity: 0;
-}
+					#bootScreen::after {
+						animation: bootingScreen;
+						animation-iteration-count: 1;
+					}
 
-#bootScreen::after {
-
-	animation: bootingScreen;
-	animation-iteration-count: 1;
-}
-
-#bootText {
-	position: absolute;
-	top: 23%;
-	left: 15%;
-}
+					#bootText {
+						position: absolute;
+						top: 23%;
+						left: 15%;
+					}
 
 
 @keyframes errorScreen { 
@@ -898,46 +890,45 @@ a, p, span {
 }
 
 
-#errorScreen {
-	display: none;
-    content: "";
-    background-color: #171717;
-	animation: flicker .005s infinite;
-	overflow: auto;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	border-top-right-radius: 1vw;
-	border-top-left-radius: 1vw;
-	width: 90vw;
-	height: 70vh;
+					#errorScreen {
+						display: none;
+					    content: "";
+					    background-color: #171717;
+						animation: flicker .005s infinite;
+						overflow: auto;
+						border-bottom-right-radius: 25px;
+						border-bottom-left-radius: 25px;
+						border-top-right-radius: 1vw;
+						border-top-left-radius: 1vw;
+						width: 90vw;
+						height: 70vh;
 
-}
+					}
 
-#errorScreen p {
+					#errorScreen p {
+						line-height: 4px;   
+					  	margin-bottom: 5px; 
+						font-size: 1.5vw;
+						text-align: left;
+						color: white;
+						opacity: 0;
+					}
 
-		line-height: 4px;   /* within paragraph */
-  		margin-bottom: 5px; /* between paragraphs */
-		font-size: 1.5vw;
-		text-align: left;
-		color: white;
-		opacity: 0;
-}
+					#errorScreen::before {
+						animation: fadeIn("slow");
+					}
 
-#errorScreen::before {
-	animation: fadeIn("slow");
-}
+					#errorScreen::after {
 
-#errorScreen::after {
+						animation: errorScreen;
+						animation-iteration-count: 1;
+					}
 
-	animation: errorScreen;
-	animation-iteration-count: 1;
-}
-
-#errorText {
-	position: absolute;
-	top: 40%;
-	left: 15%;
-}
+					#errorText {
+						position: absolute;
+						top: 40%;
+						left: 15%;
+					}
 
 @keyframes finalScreen { 
 	100% { opacity: 1; }
@@ -986,50 +977,48 @@ a, p, span {
 }
 
 
-#finalScreen {
-	display: none;
-    content: "";
-    background-color: #171717;
-	animation: flicker .005s infinite;
-	overflow: auto;
-	align-content: center;
-	justify-content: center;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	border-top-right-radius: 1vw;
-	border-top-left-radius: 1vw;
-	width: 90vw;
-	height: 70vh;
+					#finalScreen {
+						display: none;
+						content: "";
+						background-color: #171717;
+						animation: flicker .005s infinite;
+						overflow: auto;
+						align-content: center;
+						justify-content: center;
+						border-bottom-right-radius: 25px;
+						border-bottom-left-radius: 25px;
+						border-top-right-radius: 1vw;
+						border-top-left-radius: 1vw;
+						width: 90vw;
+						height: 70vh;
+					}
 
-}
+					#finalScreen p {
 
-#finalScreen p {
+						line-height: 4px;
+						margin-bottom: 5px; 
+						font-size: 1.5vw;
+						text-align: center;
+						color: white;
+						opacity: 0;
+					}
 
-		line-height: 4px;   /* within paragraph */
-  		margin-bottom: 5px; /* between paragraphs */
-		font-size: 1.5vw;
-		text-align: center;
-		color: white;
-		opacity: 0;
-}
+					#finalScreen::before {
+						animation: fadeIn("slow");
+					}
 
-#finalScreen::before {
-	animation: fadeIn("slow");
-}
+					#finalScreen::after {
+						animation: finalScreen;
+						animation-iteration-count: 1;
+					}
 
-#finalScreen::after {
-	animation: finalScreen;
-	animation-iteration-count: 1;
-}
+					#finalText {
+						padding-top: 5vw;
+					}
 
-#finalText {
-	padding-top: 5vw;
-}
-
-#finaleEingabe {
-		outline: none;
-		font-family: ChiKareGo;
-		font-size: 0.9em;
-
-}
+					#finaleEingabe {
+							outline: none;
+							font-family: ChiKareGo;
+							font-size: 0.9em;
+					}
 }
