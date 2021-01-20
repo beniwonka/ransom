@@ -80,18 +80,18 @@
 
 						<div id="einsoeffnen">
 							
-							<div id="browserHeader">
+							<div class="noselect" id="browserHeader">
 								<span id="title">Start</span>
 								<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('einsoeffnen', 'ordner');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
 							</div>
 							
-							<div id="foto">
+							<div class="noselect" id="foto">
 								<img id="photo" draggable="false" src="icons/photo.png" onclick="fotoOpen();"><br>
 								<span id="ordnerName">Alphabet.jpeg</span>
 							</div> 
 							
-							<div id="readMe">
+							<div class="noselect" id="readMe">
 								<img id="doc" draggable="false" src="icons/doc.png" onclick="infoOpen();"><br>
 								<span id="ordnerName">TryToReadMe.txt</span>
 							</div> 
@@ -107,7 +107,7 @@
 						<br><span id="ordnerName">|)|23!|)|23!|\\||_|113!|\\|5</span>
 					</div>
 
-						<div id="passwordzwei">
+						<div class="noselect" id="passwordzwei">
 
 							<div id="browserHeader">
 								<span id="title">Unarchiver</span>
@@ -122,7 +122,7 @@
 						</div>
 							
 						
-						<div id="textdatei" style="display: none;">
+						<div class="noselect" id="textdatei" style="display: none;">
 
 							<div id="browserHeader">
 								<span id="title">Hinweis</span>
@@ -147,7 +147,7 @@
 
 						<div id="googleBrowser">
 
-							<div id="browserHeader">
+							<div class="noselect" id="browserHeader">
 								<span id="title">Safari</span>
 								<a href="#" draggable="false" id="googleClose" onclick="toggle_visibility('googleBrowser', 'google');event.stopPropagation(), click.play();">x</a>
 								<div id="block"></div>
@@ -187,7 +187,7 @@
 						<br> <span id="ordnerName">Chat.app</span>
 					</div>
 
-							<div id='chatbox'>
+							<div class="noselect" id='chatbox'>
 
 								<div id="browserHeader">
 									<span id="title">Chat</span>
@@ -210,7 +210,7 @@
 						<br> <span id="ordnerName">Antivirus.zip</span>
 					</div>
 
-					<div id="passwordDeaktivieren">
+					<div class="noselect" id="passwordDeaktivieren">
 						<div id="browserHeader">
 								<span id="title">Bereit?</span>
 								<a href="#" draggable="false" id="deactivateClose" onclick="toggle_visibility('passwordDeaktivieren', 'deactivate');event.stopPropagation(), click.play();">x</a>
@@ -243,7 +243,7 @@
 
 					<!-- zusätzliche Ordner -->
 
-						<div id="fotooeffnen">
+						<div class="noselect" id="fotooeffnen">
 							<div id="browserHeader">
 								<span id="title">Alphabet.jpeg</span>
 								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('fotooeffnen', 'photo');event.stopPropagation(), click.play();">x</a>
@@ -252,7 +252,7 @@
 							<img id="alphabet" src="icons/alphabet.jpg">
 						</div>
 
-						<div id="informationeins">
+						<div class="noselect" id="informationeins">
 							<div id="browserHeader">
 								<span id="title">TryToReadMe.txt</span>
 								<a href="#" draggable="false" id="fotoClose" onclick="toggle_visibility('informationeins', 'doc');event.stopPropagation(), click.play();">x</a>
@@ -263,34 +263,34 @@
 							<img draggable="false" id="readMePhoto" src="icons/word.png">
 						</div>
 
-				<div id="neustartNachfrage">
+				<div class="noselect" id="neustartNachfrage">
 					<div id="browserHeader">
 					<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('neustartNachfrage', '#');event.stopPropagation(), click.play();">x</a>
 					<div id="block"></div>
 				</div>
-					<div id="neustartInhalt">
+					<div class="noselect" id="neustartInhalt">
 					<p> Moechtest du das Spiel wirklich neu starten? </p>
 					<button onclick="location.reload();">Neu Starten</button>
 				</div>
 				</div>
 
 
-				<div id="ausschaltenNachfrage">
+				<div class="noselect" id="ausschaltenNachfrage">
 					<div id="browserHeader">
 					<a href="#" draggable="false" id="einsClose" onclick="toggle_visibility('ausschaltenNachfrage', '#');event.stopPropagation(), click.play();">x</a>
 					<div id="block"></div>
 				</div>
-					<div id="ausschaltInhalt">
+					<div class="noselect" id="ausschaltInhalt">
 					<p> Gib doch nicht so einfach auf, du schaffst es schon.</p>
 				</div>
 				</div>
 
-				<div id="navileiste">
+				<div class="noselect" id="navileiste">
 				<img id="naviLogo" draggable="false" src="icons/logo_icon.png" onclick="dropdownOeffnen()">
 				<p id="datum"><script>document.write(new Date().toLocaleDateString()); </script></p>
 				<p id="timer">20:00</p>
 
-				<div id="dropdown" onclick="toggle_dropdown();">
+				<div class="noselect" id="dropdown" onclick="toggle_dropdown();">
 				<p id="neustartButton" onclick="neustarten();"> Neustarten</p>
 				<p id="ausschaltButton" onclick="ausschalten();"> Ausschalten</p>
 				</div>
